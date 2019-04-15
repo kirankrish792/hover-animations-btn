@@ -172,22 +172,25 @@ body{
 
 /* ----------------------------------- */
 /* --- CSS structure of the button --- */
-/* -------- (Example button) --------- */
+/* ----------------------------------- */
 
 .btn{
 	display: block;
-	text-decoration: none;
-	background-color: var(--color-second);
-	padding: 20px 50px;
 	color: var(--text-color);
-	font-family: var(--body-font);
 	font-size: var(--normal-font-size);
-	font-weight: 200;
+	font-family: var(--body-font);
+	padding: var(--normal-paddings);
+	text-decoration: none;
 	border-radius: var(--border-radius);
-	transition:.2s;
+	background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4 );
+	background-size: 400%;
 
 	&:hover{
-		background-color: var(--color-first);
-		box-shadow: 5px 5px 5px -5px hsla(0, 0%, 0%, 0.5);
+		animation: bgCarousel 20s linear infinite;
 	}
+}
+
+@keyframes bgCarousel{
+	0% {background-position: 0%;}
+	100% {background-position: 400%;}
 }
