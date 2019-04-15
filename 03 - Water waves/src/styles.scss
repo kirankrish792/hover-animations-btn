@@ -17,6 +17,7 @@
 --heading-height: 4.5em;
 --body-line-height: 1.6;
 --border-radius: 0.25rem;
+--normal-paddings:1em 2.5em;
 --gap: 1rem;
 
 	/*--- Colors variables ---*/
@@ -41,35 +42,6 @@
 --z-tooltip: 10;
 --z-fixed: 100;
 --z-modal: 1000;
-	
-// --color-first-alt: ;
-// --color-second-alt: ;
-// --color-third: ;
-// --color-third-alt: ;
-// --color-fourth: ;
-// --color-fourth-alt: ;
-// --color-accent: ;
-// --color-accent-alt: ;
-// --color-light: ;
-// --color-dark: ;
-// --color-dark-alt: ;
-// --color-border: ;
-// --color-text-light: ;
-// --first-color-alt: var(--color-first-alt);
-// --second-color: var(--color-second);
-// --second-color-alt: var(--color-second-alt);
-// --third-color: var(--color-third);
-// --third-color-alt: var(--color-third-alt);
-// --fourth-color: var(--color-fourth);
-// --fourth-color-alt: var(--color-fourth-alt);
-// --accent-color: var(--color-accent);
-// --accent-color-alt: var(--color-accent-alt);
-// --light-color: var(--color-light);
-// --dark-color: var(--color-dark);
-// --dark-color-alt: var(--color-dark-alt);
-// --border-color: var(--color-border);
-// --color: var(--color-first);
-// --color-alt: var(--color-first-alt);
 }
 
 *,
@@ -171,22 +143,66 @@ body{
 
 /* ----------------------------------- */
 /* --- CSS structure of the button --- */
-/* -------- (Example button) --------- */
+/* ----------------------------------- */
+
 
 .btn{
-	display: block;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-decoration: none;
-	background-color: var(--color-second);
-	padding: 20px 50px;
+  background-color: hsl(332, 90%, 65%);
 	color: var(--text-color);
+	padding: var(--normal-paddings);
 	font-family: var(--body-font);
 	font-size: var(--normal-font-size);
-	font-weight: 200;
 	border-radius: var(--border-radius);
-	transition:.2s;
-
+	overflow: hidden;
+	transition: .2s;
+	
 	&:hover{
-		background-color: var(--color-first);
-		box-shadow: 5px 5px 5px -5px hsla(0, 0%, 0%, 0.5);
+		background:hsl(332, 90%, 70%);
+		box-shadow: 5px 5px 10px rgba(95, 95, 95, 0.5);
+		transform:translateY(-3px)
 	}
+
+	&:before, 
+	&:after{
+  	content: '';
+  	position: absolute;
+  	background-color: hsla(0, 0%, 100%, 0.3);
+  	width: 50px;
+  	height: 50px;
+		opacity:0;
+		border-radius: 50%;
+	}
+	
+	&:before{
+		animation: pull 1.5s linear infinite;
+	}
+	
+	&:after{
+		animation: pull 2s .5s linear infinite;
+	}
+	
+	&:hover::before, 
+	&:hover::after{
+		display: none
+	}
+}
+
+@keyframes pull{
+  0%{
+      transform: scale(0);
+      opacity:0;
+  }
+  33%{
+      transform: scale(1);
+      opacity:1;
+  }
+  100%{
+      transform: scale(4);
+      opacity: 0;
+  }
 }
