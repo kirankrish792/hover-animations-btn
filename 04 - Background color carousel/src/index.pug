@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="title" content="Effects and animation for buttons with Css and JavaScript" class="next-head")
+    meta(name="description" content="Repositorio lleno de botonoes con diversoso efectos y estructuras con Pug y SCSS" class="next-head")
+
+    title JD - Effects for buttons 
+
+    link(rel="stylesheet", href="styles.css")
+    link(rel="stylesheet", href="public/css/font-Montserrat.css")
+    link(rel="stylesheet", href="public/css/font-Confortaa.css")
+    link(rel="shortcut icon", href="public/img/favicon.svg", type="image/x-icon")
+
+  body
+    main.main
+      header.main-header
+        nav.main-nav
+          div
+            a(href="/").link-logo
+              img(src="public/img/logo.svg", alt="").svg-logo
+        
+          h1.main-title Template
+
+      .mainContainer
+        a(href="/").btn Hover me!
+      footer.main-footer
+        .wrapper-footer
+          p.text-footer#textFooter
+
+    script(src="scripts.js")
