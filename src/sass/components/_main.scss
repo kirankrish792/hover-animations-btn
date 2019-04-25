@@ -1,0 +1,65 @@
+.main-grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-w);
+  grid-gap: var(--gap);
+  width: 100%;
+  padding-bottom: calc(var(--heading-height) - 2em);
+}
+
+.wrappers-grid {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  width: var(--MW-wrappers-grid);
+  height: var(--MH-wrappers-grid);
+  overflow: hidden;
+  z-index: var(--z-normal);
+  box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.25);
+}
+
+.wraps-btn {
+  position: relative;
+  display: flex;
+  // Suejo a cambio para implementar contenido
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: var(--z-normal);
+}
+
+.header-wrap-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tag-btn {
+  position: relative;
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--smaller-font-size);
+  font-weight: 600;
+  background-color: hsl(0, 0%, 90%);
+  padding: var(--smaller-padding);
+  border-radius: var(--border-radius);
+  z-index: var(--z-normal);
+  cursor: pointer;
+
+  &:hover {
+    background-color: hsl(0, 0%, 70%);
+  }
+}
+.body-wrap-btn {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}

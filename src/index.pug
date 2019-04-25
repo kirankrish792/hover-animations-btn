@@ -12,8 +12,8 @@ html(lang="es")
     link(rel="stylesheet", href="public/css/normalize.css")
     link(rel="stylesheet", href="public/css/font-Montserrat.css")
     link(rel="stylesheet", href="public/css/font-Confortaa.css")
-    link(rel="shortcut icon", href="public/img/favicon.svg", type="image/x-icon")
-    link(rel="stylesheet", href="styles.css")
+    link(rel="shortcut icon", href="public/svg/favicon.svg", type="image/x-icon")
+    link(rel="stylesheet", href="public/css/styles.css")
 
   body
     .principal-section
@@ -21,33 +21,24 @@ html(lang="es")
         header.main-header
           nav.main-nav
             a(href="/").main-logo
-              img(src="public/img/logo.svg", alt="").svg-logo
+              img(src="public/svg/logo.svg", alt="").svg-logo
             h1.main-title Effects and animations for buttons 
 
+        article.article-main-grid-row
         .main-grid-container
-          .wrappers-grid
-            .wraps-btn
-              .header-wrap-btn
-              //- Titulo o grid-mark para asociar a tabla de busqueda
-              .body-wrap-btn
-                a(href="#").btn Hover me!
-              .footer-wrap-btn
-              //- Propuesta de futuro: asocar a carpetas y crae un visor
-              //- del codigo + descarga del mmismo
-              
-          .wrappers-grid
-            a(href="#").btn Hover me!
-          .wrappers-grid
-            a(href="#").btn Hover me!
-          .wrappers-grid
-            a(href="#").btn Hover me!
-          .wrappers-grid
-            a(href="#").btn Hover me!
-          .wrappers-grid
-            a(href="#").btn Hover me!
-
+          include pages/layout/grid-row-1/row-A1.pug
+          include pages/layout/grid-row-1/row-B1.pug
+          include pages/layout/grid-row-1/row-C1.pug
+          include pages/layout/grid-row-1/row-D1.pug
+          include pages/layout/grid-row-1/row-E1.pug
+          
+          include pages/layout/grid-row-1/row-A1.pug
+          include pages/layout/grid-row-1/row-B1.pug
+          include pages/layout/grid-row-1/row-C1.pug
+          include pages/layout/grid-row-1/row-D1.pug
+          include pages/layout/grid-row-1/row-E1.pug
         footer.main-footer
           .wrapper-footer
             p.text-footer#textFooter
 
-    script(src="scripts.js")
+    script(src="public/JS/scripts.js")

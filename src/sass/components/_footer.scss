@@ -1,0 +1,34 @@
+.main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3em;
+  z-index: var(--z-normal);
+  background-color: var(--bg-color-dark);
+}
+.wrapper-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1700px;
+  height: 1.5rem;
+}
+
+.text-footer {
+  display: flex;
+  align-content: center;
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+  letter-spacing: 2px;
+
+  &::after {
+    display: block;
+    content: url(../svg/favicon.svg);
+    width: var(--normal-font-size);
+    margin-left: 5px;
+  }
+}

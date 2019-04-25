@@ -1,261 +1,42 @@
-/* ########################### */
-/* ###### GLOBAL STYLES ###### */
-/* ########################### */
+@import "sass/components/variables.scss";
+@import "sass/components/global.scss";
 
-:root {
-  /*--- Typography variables ---*/
-  --body-font: "Montserrat", sans-serif;
-  --heading-font: "Comfortaas", sans-serif;
+@import "sass/components/header.scss";
+@import "sass/components/main.scss";
 
-  /*--- Sizes variables ---*/
-  --h1-font-size: 2rem;
-  --h2-font-size: 2.5rem;
-  --h3-font-size: 2.25rem;
-  --normal-font-size: 1.25rem;
-  --small-font-size: 1rem;
-  --smaller-font-size: 0.75rem;
-  --heading-height: 4.5em;
-  --body-line-height: 1.6;
-  --border-radius: 0.25rem;
-  --normal-paddings: 1em 2.5em;
-  --gap: 1.5rem;
-  --max-w: 1700px;
-  --MW-wrappers-grid: 320px;
-  --MH-wrappers-grid: 200px;
+@import "sass/layout/grid-row-1/row-A1.scss";
+@import "sass/layout/grid-row-1/row-B1.scss";
+@import "sass/layout/grid-row-1/row-C1.scss";
+@import "sass/layout/grid-row-1/row-D1.scss";
+@import "sass/layout/grid-row-1/row-E1.scss";
 
-  /*--- Colors variables ---*/
-  --color-first: hsl(355, 90%, 30%);
-  --first-color: var(--color-first);
+@import "sass/components/footer.scss";
 
-  --color-second: hsl(355, 83%, 45%);
-  --second-color: var(--color-second);
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (max-width: 1740px) {
+//   :root {
+//     /*--- Typography variables ---*/
+//     --body-font: "Montserrat", sans-serif;
+//     --heading-font: "Comfortaas", sans-serif;
 
-  --color-text: hsl(0, 0%, 100%);
-  --text-color: var(--color-text);
+//     /*--- Sizes variables ---*/
+//     --h1-font-size: 2rem;
+//     --h2-font-size: 2.5rem;
+//     --h3-font-size: 2.25rem;
+//     --normal-font-size: 1.25rem;
+//     --small-font-size: 1rem;
+//     --smaller-font-size: 0.75rem;
+//     --heading-height: 4.5em;
+//     --body-line-height: 1.6;
+//     --border-radius: 0.25rem;
+//     --normal-paddings: 1em 2.5em;
+//     --gap: 1.5rem;
+//     --max-w: 1400px;
+//     --MW-wrappers-grid: 320px;
+//     --MH-wrappers-grid: 200px;
+//   }
 
-  --color-body-bg: hsl(0, 0%, 96%);
-  --body-bg: var(--color-body-bg);
-
-  --color-dark-bg: hsl(0, 0%, 70%);
-  --bg-color-dark: var(--color-dark-bg);
-
-  /*--- Z-index variables ---*/
-  --z-back: -10;
-  --z-normal: 1;
-  --z-tooltip: 10;
-  --z-fixed: 100;
-  --z-modal: 1000;
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: all 0.3s ease;
-}
-
-body {
-  counter-reset: section;
-}
-
-a {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: var(--text-color);
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-}
-
-.principal-section {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.main-header {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: var(--color-first);
-  height: var(--heading-height);
-  margin-bottom: calc(var(--heading-height) - 2em);
-}
-.main-nav {
-  position: relative;
-  max-width: var(--max-w);
-  height: var(--heading-height);
-  margin: 0 50px;
-  background-color: inherit;
-}
-.main-nav {
-  display: flex;
-  flex-direction: row;
-  grid-template-columns: auto auto;
-  align-items: center;
-  justify-content: space-between;
-  max-width: var(--max-w);
-  width: 100%;
-  height: 100%;
-}
-
-.main-logo {
-  text-decoration: none;
-  display: block;
-}
-
-.svg-logo {
-  display: block;
-  width: auto;
-  height: calc(var(--h1-font-size) + 1em);
-}
-
-.main-title {
-  color: var(--text-color);
-  font-weight: 400;
-  font-size: var(--h1-font-size);
-  font-family: var(--heading-font);
-  font-weight: 200;
-}
-
-.main-grid-container {
-  display: grid;
-  grid-template-columns: repeat(5, max-content);
-  justify-content: space-between;
-  align-items: center;
-  max-width: var(--max-w);
-  grid-gap: var(--gap);
-  width: 100%;
-  padding-bottom: calc(var(--heading-height) - 2em);
-}
-
-.wrappers-grid {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: var(--border-radius);
-  width: var(--MW-wrappers-grid);
-  height: var(--MH-wrappers-grid);
-  overflow: hidden;
-  z-index: var(--z-normal);
-  box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.25);
-}
-
-.wraps-btn {
-  position: relative;
-  display: flex;
-  // Suejo a cambio para implementar contenido
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  z-index: var(--z-normal);
-}
-.body-wrap-btn {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-.main-footer {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: var(--bg-color-dark);
-}
-.wrapper-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1700px;
-  height: 1.5rem;
-}
-
-.text-footer {
-  display: flex;
-  align-content: center;
-  color: var(--text-color);
-  font-family: var(--body-font);
-  font-size: var(--smaller-font-size);
-  letter-spacing: 2px;
-
-  &::after {
-    content: url(public/img/favicon.svg);
-    display: block;
-    width: var(--small-font-size);
-    margin-left: 5px;
-  }
-}
-
-/* ----------------------------------- */
-/* --- CSS structure of the button --- */
-/* ----------------------------------- */
-
-.btn {
-  background-color: hsl(332, 90%, 65%);
-  padding: var(--normal-paddings);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  &:hover {
-    background: hsl(332, 90%, 70%);
-    box-shadow: 5px 5px 10px rgba(95, 95, 95, 0.5);
-    transform: translateY(-3px);
-  }
-
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    background-color: hsla(0, 0%, 100%, 0.3);
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-    border-radius: 50%;
-  }
-
-  &:before {
-    animation: pull 1.5s linear infinite;
-  }
-
-  &:after {
-    animation: pull 2s 0.5s linear infinite;
-  }
-
-  &:hover::before,
-  &:hover::after {
-    display: none;
-  }
-}
-
-@keyframes pull {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  33% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(4);
-    opacity: 0;
-  }
-}
+//   .main-grid-container {
+//     grid-template-columns: repeat(4, max-content);
+//   }
+// }
