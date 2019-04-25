@@ -18,31 +18,36 @@
 
 @import "sass/components/footer.scss";
 
-// /* Extra large devices (large laptops and desktops, 1200px and up) */
-// @media only screen and (max-width: 1740px) {
-//   :root {
-//     /*--- Typography variables ---*/
-//     --body-font: "Montserrat", sans-serif;
-//     --heading-font: "Comfortaas", sans-serif;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1740px) {
+  :root {
+    /*--- Typography variables ---*/
+    --body-font: "Montserrat", sans-serif;
+    --heading-font: "Comfortaas", sans-serif;
 
-//     /*--- Sizes variables ---*/
-//     --h1-font-size: 2rem;
-//     --h2-font-size: 2.5rem;
-//     --h3-font-size: 2.25rem;
-//     --normal-font-size: 1.25rem;
-//     --small-font-size: 1rem;
-//     --smaller-font-size: 0.75rem;
-//     --heading-height: 4.5em;
-//     --body-line-height: 1.6;
-//     --border-radius: 0.25rem;
-//     --normal-paddings: 1em 2.5em;
-//     --gap: 1.5rem;
-//     --max-w: 1400px;
-//     --MW-wrappers-grid: 320px;
-//     --MH-wrappers-grid: 200px;
-//   }
+    /*--- Sizes variables ---*/
+    --h1-font-size: 2rem;
+    --h2-font-size: 2.5rem;
+    --h3-font-size: 2.25rem;
+    --normal-font-size: 1.25rem;
+    --small-font-size: 1rem;
+    --smaller-font-size: 0.75rem;
+    --heading-height: 4.5em;
+    --body-line-height: 1.6;
+    --border-radius: 0.25rem;
+    --normal-paddings: 1em 2.5em;
+    --gap: 1rem;
+    --max-w: 1400px;
+  }
 
-//   .main-grid-container {
-//     grid-template-columns: repeat(4, max-content);
-//   }
-// }
+  .section-main-grid-columns {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-w);
+    grid-gap: var(--gap);
+    width: 100%;
+    padding-bottom: calc(var(--heading-height) - 3em);
+  }
+}
