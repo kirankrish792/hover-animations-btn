@@ -25,18 +25,18 @@ html(lang="es")
             h1.main-title Effects and animations for buttons 
 
         article.article-main-grid-row
-        .main-grid-container
-          include pages/layout/grid-row-1/row-A1.pug
-          include pages/layout/grid-row-1/row-B1.pug
-          include pages/layout/grid-row-1/row-C1.pug
-          include pages/layout/grid-row-1/row-D1.pug
-          include pages/layout/grid-row-1/row-E1.pug
-          
-          include pages/layout/grid-row-1/row-A1.pug
-          include pages/layout/grid-row-1/row-B1.pug
-          include pages/layout/grid-row-1/row-C1.pug
-          include pages/layout/grid-row-1/row-D1.pug
-          include pages/layout/grid-row-1/row-E1.pug
+          section.section-main-grid-columns
+            include pages/layout/grid-row-1/row-A1.pug
+            include pages/layout/grid-row-1/row-B1.pug
+            include pages/layout/grid-row-1/row-C1.pug
+            include pages/layout/grid-row-1/row-D1.pug
+            include pages/layout/grid-row-1/row-E1.pug
+          section.section-main-grid-columns
+            include pages/layout/grid-row-2/row-A2.pug            
+            include pages/layout/grid-row-2/row-B2.pug
+            include pages/layout/grid-row-2/row-C2.pug
+            include pages/layout/grid-row-2/row-D2.pug
+            include pages/layout/grid-row-2/row-E2.pug
         footer.main-footer
           .wrapper-footer
             p.text-footer#textFooter

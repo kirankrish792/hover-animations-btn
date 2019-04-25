@@ -1,7 +1,16 @@
-
-.btn-2{
-
-  span{
+.btn-B2 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: hsl(0, 0%, 0%);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid #000000;
+  overflow: hidden;
+  z-index: var(--z-normal);
+  span {
     position: absolute;
     display: block;
     top: 0;
@@ -11,26 +20,26 @@
     z-index: var(--z-back);
     transform: scalex(0);
     transform-origin: right;
-    transition: transform .3s ease-out;
+    transition: transform 0.3s ease-out;
 
-    &:nth-child(1){
+    &:nth-child(1) {
       background-color: red;
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       background-color: yellow;
-      transition-delay: .1s;
+      transition-delay: 0.1s;
     }
-    &:nth-child(3){
+    &:nth-child(3) {
       background-color: blue;
-      transition-delay: .2s;
+      transition-delay: 0.2s;
     }
-    &:nth-child(4){
+    &:nth-child(4) {
       background-color: lime;
-      transition-delay: .3s;
+      transition-delay: 0.3s;
     }
   }
-  &:hover span{
-		transform: scalex(1);
-		transform-origin: left
+  &:hover span {
+    transform: scalex(1);
+    transform-origin: left;
   }
 }
