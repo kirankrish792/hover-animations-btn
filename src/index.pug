@@ -23,21 +23,15 @@ html(lang="es")
             a(href="/").main-logo
               img(src="public/svg/logo.svg", alt="").svg-logo
             h1.main-title Effects and animations for buttons 
-
         
         section.section-main-grid-columns
+
           //- Grid-Row ==> 1
-          include pages/layout/grid-row-1/row-A1.pug
-          include pages/layout/grid-row-1/row-B1.pug
-          include pages/layout/grid-row-1/row-C1.pug
-          include pages/layout/grid-row-1/row-D1.pug
-          include pages/layout/grid-row-1/row-E1.pug
+          include pages\layout\grid-row-1\main-grid-row-1.pug
+          
           //- Grid-Row ==> 2
-          include pages/layout/grid-row-2/row-A2.pug            
-          include pages/layout/grid-row-2/row-B2.pug
-          include pages/layout/grid-row-2/row-C2.pug
-          include pages/layout/grid-row-2/row-D2.pug
-          include pages/layout/grid-row-2/row-E2.pug
+          include pages\layout\grid-row-2\main-grid-row-2.pug
+
         footer.main-footer
           .wrapper-footer
             p.text-footer#textFooter
