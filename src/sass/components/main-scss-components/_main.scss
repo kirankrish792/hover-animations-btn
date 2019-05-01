@@ -6,7 +6,7 @@
   max-width: var(--max-w);
   grid-gap: var(--gap);
   width: 100%;
-  padding-bottom: calc(var(--heading-height) - 3em);
+  padding-bottom: calc(var(--heading-height) + 3em);
 }
 
 .wrappers-grid {
@@ -25,7 +25,6 @@
 .wraps-btn {
   position: relative;
   display: flex;
-  // Suejo a cambio para implementar contenido
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -39,23 +38,7 @@
   left: 0;
 }
 
-.tag-btn {
-  position: relative;
-  color: var(--text-color);
-  font-family: var(--body-font);
-  font-size: var(--smaller-font-size);
-  font-weight: 600;
-  background-color: hsl(0, 0%, 90%);
-  padding: var(--smaller-padding);
-  border-radius: var(--border-radius);
-  z-index: var(--z-normal);
-  cursor: pointer;
-
-  &:hover {
-    background-color: hsl(0, 0%, 70%);
-  }
-}
-.body-wrap-btn {
+s .body-wrap-btn {
   position: relative;
   display: flex;
   width: 100%;

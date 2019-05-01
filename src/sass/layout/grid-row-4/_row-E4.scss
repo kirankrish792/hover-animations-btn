@@ -1,0 +1,12 @@
+.btn-E4 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid hsl(0, 0%, 0%);
+  overflow: hidden;
+  z-index: var(--z-normal);
+}

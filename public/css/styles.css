@@ -1,3 +1,4 @@
+/* Styles globales and Variables CSS */
 :root {
   /*--- Typography variables ---*/
   --body-font: "Montserrat", sans-serif;
@@ -27,6 +28,8 @@
   --second-color: var(--color-second);
   --color-text: hsl(0, 0%, 100%);
   --text-color: var(--color-text);
+  --dark-color-text: hsl(0, 0%, 10%);
+  --dark-text-color: var(--dark-color-text);
   --color-body-bg: hsl(0, 0%, 96%);
   --body-bg: var(--color-body-bg);
   --color-dark-bg: hsl(0, 0%, 15%);
@@ -65,6 +68,8 @@ a {
   cursor: pointer;
 }
 
+/* -----------------------------------*/
+/* Index header and main body */
 .principal-section {
   height: 100%;
   width: 100%;
@@ -174,7 +179,7 @@ a {
   max-width: var(--max-w);
   grid-gap: var(--gap);
   width: 100%;
-  padding-bottom: calc(var(--heading-height) - 3em);
+  padding-bottom: calc(var(--heading-height) + 3em);
 }
 
 .wrappers-grid {
@@ -219,24 +224,7 @@ a {
   left: 0;
 }
 
-.tag-btn {
-  position: relative;
-  color: var(--text-color);
-  font-family: var(--body-font);
-  font-size: var(--smaller-font-size);
-  font-weight: 600;
-  background-color: #e6e6e6;
-  padding: var(--smaller-padding);
-  border-radius: var(--border-radius);
-  z-index: var(--z-normal);
-  cursor: pointer;
-}
-
-.tag-btn:hover {
-  background-color: #b3b3b3;
-}
-
-.body-wrap-btn {
+s .body-wrap-btn {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,6 +239,28 @@ a {
   align-items: center;
 }
 
+/* -----------------------------------*/
+/* Tag-btn in wraps-buttons */
+.tag-btn {
+  position: relative;
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--smaller-font-size);
+  font-weight: 600;
+  background-color: #999999;
+  padding: var(--smaller-padding);
+  border-radius: var(--border-radius);
+  z-index: var(--z-normal);
+  cursor: pointer;
+}
+
+.tag-btn:hover {
+  background-color: #bfbfbf;
+}
+
+/* -----------------------------------*/
+/* Btn ==> Row 1 from column A to E */
+/* ------- Btn --> A1 -------*/
 .btn-A1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,9 +307,10 @@ a {
   font-family: var(--body-font);
   font-weight: 600;
   font-size: var(--normal-font-size);
-  color: black;
+  color: var(--dark-color-text);
 }
 
+/* ------- Btn --> B1 -------*/
 .btn-B1 {
   display: block;
   position: relative;
@@ -359,6 +370,7 @@ a {
   transform: rotateX(90deg) translate3d(0, 0, 30px);
 }
 
+/* ------- Btn --> C1 -------*/
 .btn-C1 {
   position: relative;
   display: -webkit-box;
@@ -452,6 +464,7 @@ a {
   }
 }
 
+/* ------- Btn --> D1 -------*/
 .btn-D1 {
   display: block;
   color: var(--text-color);
@@ -490,6 +503,7 @@ a {
   }
 }
 
+/* ------- Btn --> E1 -------*/
 .btn-E1 {
   display: block;
   position: relative;
@@ -536,10 +550,14 @@ a {
   font-weight: 400;
 }
 
+/* -----------------------------------*/
+/* Btn ==> Row 2 from column A to E */
+/* ------- Btn --> A2 -------*/
 .btn-A2 {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
+  color: var(--dark-color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
@@ -547,6 +565,10 @@ a {
   border: 2px solid black;
   overflow: hidden;
   z-index: var(--z-normal);
+}
+
+.btn-A2:hover {
+  color: var(--color-text);
 }
 
 .btn-A2:hover span {
@@ -602,11 +624,12 @@ a {
   width: 25%;
 }
 
+/* ------- Btn --> B2 -------*/
 .btn-B2 {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: black;
+  color: var(--dark-color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
@@ -614,6 +637,10 @@ a {
   border: 2px solid #000000;
   overflow: hidden;
   z-index: var(--z-normal);
+}
+
+.btn-B2:hover {
+  color: var(--color-text);
 }
 
 .btn-B2:hover span {
@@ -671,11 +698,12 @@ a {
   transition-delay: 0.3s;
 }
 
+/* ------- Btn --> C2 -------*/
 .btn-C2 {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: black;
+  color: var(--dark-color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
@@ -683,6 +711,10 @@ a {
   border: 2px solid #000000;
   overflow: hidden;
   z-index: var(--z-normal);
+}
+
+.btn-C2:hover {
+  color: var(--color-text);
 }
 
 .btn-C2:hover span {
@@ -746,6 +778,7 @@ a {
   width: 25%;
 }
 
+/* ------- Btn --> D2 -------*/
 .btn-D2 {
   display: block;
   position: relative;
@@ -753,10 +786,15 @@ a {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
+  color: var(--dark-color-text);
   border-radius: var(--border-radius);
   border: 2px solid black;
   overflow: hidden;
   z-index: var(--z-normal);
+}
+
+.btn-D2:hover {
+  color: var(--color-text);
 }
 
 .btn-D2:hover .span-btn-D2:nth-child(1) {
@@ -845,6 +883,206 @@ a {
   transform-origin: top;
 }
 
+/* ------- Btn --> E2 -------*/
+.btn-E2 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+.btn-E2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff003b;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  z-index: -1;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+}
+
+.btn-E2:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.btn-E2:hover .span-btn-E2 {
+  color: var(--color-text);
+}
+
+.span-btn-E2 {
+  z-index: 1;
+  color: var(--dark-color-text);
+}
+
+/* -----------------------------------*/
+/* Btn ==> Row 3 from column A to E */
+/* ------- Btn --> A3 -------*/
+.btn-A3 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> B3 -------*/
+.btn-B3 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid #000000;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> C3 -------*/
+.btn-C3 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid #000000;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> D3 -------*/
+.btn-D3 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  color: var(--dark-color-text);
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> E3 -------*/
+.btn-E3 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* -----------------------------------*/
+/* Btn ==> Row 4 from column A to E */
+/* ------- Btn --> A4 -------*/
+.btn-A4 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> B4 -------*/
+.btn-B4 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid #000000;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> C4 -------*/
+.btn-C4 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid #000000;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> D4 -------*/
+.btn-D4 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  color: var(--dark-color-text);
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> E4 -------*/
+.btn-E4 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* -----------------------------------*/
+/* Styles for page Footer */
 .main-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -896,15 +1134,17 @@ a {
   margin-left: 5px;
 }
 
+/* -----------------------------------*/
+/* Styles Media Query ===> max-width: 1740px */
 @media only screen and (max-width: 1740px) {
   :root {
     /*--- Typography variables ---*/
     --body-font: "Montserrat", sans-serif;
     --heading-font: "Comfortaas", sans-serif;
     /*--- Sizes variables ---*/
-    --h1-font-size: 2rem;
-    --h2-font-size: 2.5rem;
-    --h3-font-size: 2.25rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.75rem;
     --normal-font-size: 1.25rem;
     --small-font-size: 1rem;
     --smaller-font-size: 0.75rem;
@@ -912,8 +1152,8 @@ a {
     --body-line-height: 1.6;
     --border-radius: 0.25rem;
     --normal-paddings: 1em 2.5em;
-    --gap: 1rem;
-    --max-w: 1400px;
+    --gap: 0.75rem;
+    --max-w: 1300px;
   }
   .section-main-grid-columns {
     display: -ms-grid;
@@ -922,17 +1162,9 @@ a {
     -ms-grid-columns: (max-content)[4];
     grid-template-columns: repeat(4, -webkit-max-content);
     grid-template-columns: repeat(4, max-content);
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    max-width: var(--max-w);
-    grid-gap: var(--gap);
-    width: 100%;
-    padding-bottom: calc(var(--heading-height) - 3em);
+    padding-bottom: calc(var(--heading-height) + 2.5em);
+  }
+  .tag-btn {
+    display: none;
   }
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */

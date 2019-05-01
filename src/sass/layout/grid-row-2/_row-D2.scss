@@ -5,10 +5,15 @@
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
+  color: var(--dark-color-text);
   border-radius: var(--border-radius);
   border: 2px solid hsl(0, 0%, 0%);
   overflow: hidden;
   z-index: var(--z-normal);
+
+  &:hover {
+    color: var(--color-text);
+  }
 
   &:hover .span-btn-D2:nth-child(1) {
     transform: scalex(1);
