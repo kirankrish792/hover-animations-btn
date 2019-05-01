@@ -1,28 +1,14 @@
 <!DOCTYPE html>
 html(lang="es")
   head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="title" content="Effects and animation for buttons with Css and JavaScript" class="next-head")
-    meta(name="description" content="Repositorio lleno de botonoes con diversoso efectos y estructuras con Pug y SCSS" class="next-head")
-
+    include template\components\index-pug-components\head-metaTags.pug
+    include template\components\index-pug-components\head-link.pug
     title JD - Effects and animations for buttons 
-
-    link(rel="stylesheet", href="public/css/normalize.css")
-    link(rel="stylesheet", href="public/css/font-Montserrat.css")
-    link(rel="stylesheet", href="public/css/font-Confortaa.css")
-    link(rel="shortcut icon", href="public/svg/favicon.svg", type="image/x-icon")
-    link(rel="stylesheet", href="public/css/styles.css")
 
   body
     .principal-section
       main.main
-        header.main-header
-          nav.main-nav
-            a(href="/").main-logo
-              img(src="public/svg/logo.svg", alt="").svg-logo
-            h1.main-title Effects and animations for buttons 
+        include template\components\index-pug-components\header.pug
         
         section.section-main-grid-columns
 
@@ -32,8 +18,6 @@ html(lang="es")
           //- Grid-Row ==> 2
           include template\layout\grid-row-2\main-grid-row-2.pug
 
-        footer.main-footer
-          .wrapper-footer
-            p.text-footer#textFooter
+        include template\components\index-pug-components\footer.pug
 
     script(src="public/JS/scripts.js")
