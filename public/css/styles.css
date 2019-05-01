@@ -3,9 +3,9 @@
   --body-font: "Montserrat", sans-serif;
   --heading-font: "Comfortaas", sans-serif;
   /*--- Sizes variables ---*/
-  --h1-font-size: 2rem;
-  --h2-font-size: 2.5rem;
-  --h3-font-size: 2.25rem;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2.25rem;
+  --h3-font-size: 2rem;
   --normal-font-size: 1.25rem;
   --small-font-size: 1rem;
   --smaller-font-size: 0.75rem;
@@ -896,7 +896,6 @@ a {
   margin-left: 5px;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1740px) {
   :root {
     /*--- Typography variables ---*/
@@ -935,3 +934,5 @@ a {
     padding-bottom: calc(var(--heading-height) - 3em);
   }
 }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */

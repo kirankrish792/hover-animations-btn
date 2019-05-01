@@ -1,8 +1,8 @@
-@import "sass/components/variables.scss";
-@import "sass/components/global.scss";
+@import "sass/components/main-scss-components/variables.scss";
+@import "sass/components/main-scss-components/global.scss";
 
-@import "sass/components/header.scss";
-@import "sass/components/main.scss";
+@import "sass/components/main-scss-components/header.scss";
+@import "sass/components/main-scss-components/main.scss";
 
 @import "sass/layout/grid-row-1/row-A1.scss";
 @import "sass/layout/grid-row-1/row-B1.scss";
@@ -16,38 +16,7 @@
 @import "sass/layout/grid-row-2/row-D2.scss";
 @import "sass/layout/grid-row-2/row-E2.scss";
 
-@import "sass/components/footer.scss";
+@import "sass/components/main-scss-components/footer.scss";
+@import "sass/components/scss-mediaQuerys/maxW-1740";
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1740px) {
-  :root {
-    /*--- Typography variables ---*/
-    --body-font: "Montserrat", sans-serif;
-    --heading-font: "Comfortaas", sans-serif;
-
-    /*--- Sizes variables ---*/
-    --h1-font-size: 2rem;
-    --h2-font-size: 2.5rem;
-    --h3-font-size: 2.25rem;
-    --normal-font-size: 1.25rem;
-    --small-font-size: 1rem;
-    --smaller-font-size: 0.75rem;
-    --heading-height: 4.5em;
-    --body-line-height: 1.6;
-    --border-radius: 0.25rem;
-    --normal-paddings: 1em 2.5em;
-    --gap: 1rem;
-    --max-w: 1400px;
-  }
-
-  .section-main-grid-columns {
-    display: grid;
-    grid-template-columns: repeat(4, max-content);
-    justify-content: space-between;
-    align-items: center;
-    max-width: var(--max-w);
-    grid-gap: var(--gap);
-    width: 100%;
-    padding-bottom: calc(var(--heading-height) - 3em);
-  }
-}
