@@ -62,9 +62,6 @@ a {
   position: relative;
   text-decoration: none;
   color: #1a1a1a;
-  font-weight: 600;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
   cursor: pointer;
 }
 
@@ -1005,15 +1002,66 @@ s .body-wrap-btn {
 .btn-C3 {
   display: block;
   position: relative;
-  padding: var(--normal-paddings);
-  color: var(--dark-color-text);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border-radius: var(--border-radius);
-  border: 2px solid #000000;
-  overflow: hidden;
+  padding: var(--normal-paddings);
   z-index: var(--z-normal);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  color: transparent;
+  /* Evita transicion deforme con el texto, necesario solo para alineacion en el contenedor */
+}
+
+.btn-C3::before {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-body-bg);
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  border: 2px solid #000000;
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+  -webkit-transform: translateX(-100%) rotateY(90deg);
+  transform: translateX(-100%) rotateY(90deg);
+}
+
+.btn-C3::after {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-dark-bg);
+  padding: var(--normal-paddings);
+  color: var(--color-text);
+  border: 2px solid #000000;
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  -webkit-transform: translateX(0) rotateY(0);
+  transform: translateX(0) rotateY(0);
+}
+
+.btn-C3:hover::before {
+  -webkit-transform: translateX(0) rotateY(0);
+  transform: translateX(0) rotateY(0);
+}
+
+.btn-C3:hover::after {
+  -webkit-transform: translateX(100%) rotateY(90deg);
+  transform: translateX(100%) rotateY(90deg);
 }
 
 /* ------- Btn --> D3 -------*/

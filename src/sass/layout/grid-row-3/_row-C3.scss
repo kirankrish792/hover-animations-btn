@@ -1,13 +1,47 @@
 .btn-C3 {
   display: block;
   position: relative;
-  padding: var(--normal-paddings);
-  color: var(--dark-color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border-radius: var(--border-radius);
-  border: 2px solid #000000;
-  overflow: hidden;
+  padding: var(--normal-paddings);
   z-index: var(--z-normal);
+  transform-style: preserve-3d;
+  color: transparent; /* Evita transicion deforme con el texto, necesario solo para alineacion en el contenedor */
+
+  &::before {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-body-bg);
+    padding: var(--normal-paddings);
+    color: var(--dark-color-text);
+    border: 2px solid #000000;
+    transform-origin: right;
+    transform: translateX(-100%) rotateY(90deg);
+  }
+
+  &::after {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-dark-bg);
+    padding: var(--normal-paddings);
+    color: var(--color-text);
+    border: 2px solid #000000;
+    transform-origin: left;
+    transform: translateX(0) rotateY(0);
+  }
+
+  &:hover::before {
+    transform: translateX(0) rotateY(0);
+  }
+  &:hover::after {
+    transform: translateX(100%) rotateY(90deg);
+  }
 }
