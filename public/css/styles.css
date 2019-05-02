@@ -939,11 +939,21 @@ s .body-wrap-btn {
   color: var(--dark-color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  font-weight: 600;
-  border-radius: var(--border-radius);
-  border: 2px solid black;
+  font-weight: 400;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  background-color: #fc5c4a;
   overflow: hidden;
   z-index: var(--z-normal);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: 0.3s cubic-bezier(0.17, 0.67, 0.09, 1.91);
+  -o-transition: 0.3s cubic-bezier(0.17, 0.67, 0.09, 1.91);
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.09, 1.91);
+}
+
+.btn-A3:hover {
+  letter-spacing: 8px;
 }
 
 /* ------- Btn --> B3 -------*/
