@@ -1538,6 +1538,438 @@ h4 {
 }
 
 /* -----------------------------------*/
+/* Btn ==> Row 5 from column A to E */
+/* ------- Btn --> A5 -------*/
+.btn-A5 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> B5 -------*/
+.btn-B5 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> C5 -------*/
+.btn-C5 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> D5 -------*/
+.btn-D5 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> E5 -------*/
+.btn-E5 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* -----------------------------------*/
+/* Btn ==> Row 6 from column A to E */
+/* ------- Btn --> A6 -------*/
+.btn-A6 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> B6 -------*/
+.btn-B6 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> C6 -------*/
+.btn-C6 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> D6 -------*/
+.btn-D6 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> E6 -------*/
+.btn-E6 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* -----------------------------------*/
+/* Btn ==> Row 7 from column A to E */
+/* ------- Btn --> A7 -------*/
+.btn-A7 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> B7 -------*/
+.btn-B7 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> C7 -------*/
+.btn-C7 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> D7 -------*/
+.btn-D7 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> E7 -------*/
+.btn-E7 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* -----------------------------------*/
+/* Btn ==> Row 8 from column A to E */
+/* ------- Btn --> A8 -------*/
+.btn-A8 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> B8 -------*/
+.btn-B8 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> C8 -------*/
+.btn-C8 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> D8 -------*/
+.btn-D8 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> E8 -------*/
+.btn-E8 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* -----------------------------------*/
+/* Btn ==> Row 9 from column A to E */
+/* ------- Btn --> A9 -------*/
+.btn-A9 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> B9 -------*/
+.btn-B9 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> C9 -------*/
+.btn-C9 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> D9 -------*/
+.btn-D9 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> E9 -------*/
+.btn-E9 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* -----------------------------------*/
+/* Btn ==> Row 10 from column A to E */
+/* ------- Btn --> A10 -------*/
+.btn-A10 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> B10 -------*/
+.btn-B10 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> C10 -------*/
+.btn-C10 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> D10 -------*/
+.btn-D10 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> E10 -------*/
+.btn-E10 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* -----------------------------------*/
 /* Styles for page Footer */
 .main-footer {
   display: -webkit-box;
@@ -1549,10 +1981,8 @@ h4 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  height: 3em;
+  height: var(--heading-height);
   z-index: var(--z-normal);
   background-color: var(--bg-color-dark);
 }
@@ -1568,7 +1998,7 @@ h4 {
   -ms-flex-align: center;
   align-items: center;
   max-width: 1700px;
-  height: 1.5rem;
+  height: var(--heading-height);
 }
 
 .text-footer {
@@ -1579,7 +2009,7 @@ h4 {
   align-content: center;
   color: var(--text-color);
   font-family: var(--body-font);
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
   letter-spacing: 2px;
 }
 
