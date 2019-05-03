@@ -1892,8 +1892,11 @@ h4 {
 /* ------- Btn --> A6 -------*/
 .btn-A6 {
   display: block;
+  text-align: center;
+  line-height: var(--height-btn);
   position: relative;
-  padding: var(--normal-paddings);
+  width: var(--width-btn);
+  height: var(--height-btn);
   color: var(--dark-color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -1902,6 +1905,44 @@ h4 {
   border-radius: var(--border-radius);
   overflow: hidden;
   z-index: var(--z-normal);
+}
+
+.btn-A6:hover .box-A6-1 {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.btn-A6:hover .box-A6-2 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.box-A6-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.box-A6-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(4);
+  -ms-transform: scale(4);
+  transform: scale(4);
+  background-color: var(--color-dark-bg);
+  color: var(--color-text);
+  opacity: 0;
 }
 
 /* ------- Btn --> B6 -------*/
