@@ -5,9 +5,38 @@
   color: var(--dark-color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  font-weight: 600;
-  border: 2px solid hsl(0, 0%, 0%);
+  font-weight: 400;
   border-radius: var(--border-radius);
-  overflow: hidden;
   z-index: var(--z-normal);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    height: 90px;
+    width: 200px;
+    top: -15px;
+    left: 15px;
+    position: absolute;
+    border-left: 2px solid hsl(0, 0%, 0%);
+    border-right: 2px solid hsl(0, 0%, 0%);
+  }
+
+  &::after {
+    content: "";
+    height: 60px;
+    width: 240px;
+    top: 0;
+    left: -5px;
+    position: absolute;
+    border-top: 2px solid hsl(0, 0%, 0%);
+    border-bottom: 2px solid hsl(0, 0%, 0%);
+  }
+
+  &:hover:before {
+    transform: rotateY(180deg);
+  }
+  &:hover::after {
+    transform: rotateX(180deg);
+  }
 }
