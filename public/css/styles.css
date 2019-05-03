@@ -2124,14 +2124,81 @@ h4 {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: var(--dark-color-text);
+  color: var(--color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  font-weight: 600;
-  border: 2px solid black;
-  border-radius: var(--border-radius);
-  overflow: hidden;
+  font-weight: 400;
+  border: 2px solid #206bff;
   z-index: var(--z-normal);
+  background-color: #206bff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-D6:hover {
+  background-color: white;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-D6:before, .btn-D6::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 54%;
+  height: 100%;
+  background-color: #206bff;
+  z-index: -1;
+  opacity: 0;
+}
+
+.btn-D6:before {
+  left: 0;
+}
+
+.btn-D6::after {
+  right: 0;
+}
+
+.btn-D6:hover:before {
+  opacity: 1;
+  top: 5px;
+  left: -5px;
+  -webkit-box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-animation: animatio_D6 2s linear infinite;
+  animation: animatio_D6 2s linear infinite;
+}
+
+.btn-D6:hover::after {
+  opacity: 1;
+  top: -5px;
+  right: -5px;
+  -webkit-box-shadow: -5px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-animation: animatio_D6 -1s 2s linear infinite;
+  animation: animatio_D6 -1s 2s linear infinite;
+}
+
+@-webkit-keyframes animatio_D6 {
+  0%,
+  100% {
+    top: 5px;
+  }
+  50% {
+    top: -5px;
+  }
+}
+
+@keyframes animatio_D6 {
+  0%,
+  100% {
+    top: 5px;
+  }
+  50% {
+    top: -5px;
+  }
 }
 
 /* ------- Btn --> E6 -------*/
