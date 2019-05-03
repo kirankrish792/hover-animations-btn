@@ -1949,15 +1949,52 @@ h4 {
 .btn-B6 {
   display: block;
   position: relative;
-  padding: var(--normal-paddings);
-  color: var(--dark-color-text);
+  text-align: center;
+  line-height: var(--height-btn);
+  width: var(--width-btn);
+  height: var(--height-btn);
+  color: transparent;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border: 2px solid black;
+  border: 2px solid #14d21d;
   border-radius: var(--border-radius);
   overflow: hidden;
   z-index: var(--z-normal);
+  -webkit-box-shadow: 0 15px 30px rgba(20, 210, 29, 0.7);
+  box-shadow: 0 15px 30px rgba(20, 210, 29, 0.7);
+}
+
+.btn-B6::before {
+  content: attr(data-title);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: #14d21d;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-B6:hover::before {
+  top: -100%;
+  left: 100%;
+}
+
+.btn-B6::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  background: #14d21d;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-B6:hover::after {
+  top: 0;
+  left: 0;
 }
 
 /* ------- Btn --> C6 -------*/
