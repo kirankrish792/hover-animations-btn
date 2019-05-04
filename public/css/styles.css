@@ -2363,14 +2363,29 @@ h4 {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: var(--dark-color-text);
+  color: var(--color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border: 2px solid black;
   border-radius: var(--border-radius);
   overflow: hidden;
   z-index: var(--z-normal);
+  background-color: #097ce7;
+  border-radius: 2.5em;
+  -webkit-box-shadow: 0 0 0 5px white, 0 0 0 10px #097ce7;
+  box-shadow: 0 0 0 5px white, 0 0 0 10px #097ce7;
+  -webkit-transition: 0.3s cubic-bezier(0.52, 1.65, 1, 1.31);
+  -o-transition: 0.3s cubic-bezier(0.52, 1.65, 1, 1.31);
+  transition: 0.3s cubic-bezier(0.52, 1.65, 1, 1.31);
+}
+
+.btn-B7:hover {
+  letter-spacing: 5px;
+  -webkit-box-shadow: 0 0 0 3px white, 0 0 0 8px #097ce7;
+  box-shadow: 0 0 0 3px white, 0 0 0 8px #097ce7;
+  -webkit-transform: scaleY(0.9);
+  -ms-transform: scaleY(0.9);
+  transform: scaleY(0.9);
 }
 
 /* ------- Btn --> C7 -------*/
