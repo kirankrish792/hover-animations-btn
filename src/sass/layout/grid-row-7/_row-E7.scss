@@ -10,4 +10,32 @@
   border-radius: var(--border-radius);
   overflow: hidden;
   z-index: var(--z-normal);
+
+  &:hover {
+    color: var(--color-text);
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+  }
+  &::before {
+    transform: rotateY(90deg);
+  }
+  &:hover::before {
+    transform: rotateY(0deg);
+  }
+  &::after {
+    transform: rotateX(90deg);
+  }
+  &:hover::after {
+    transform: rotateX(0deg);
+  }
 }
