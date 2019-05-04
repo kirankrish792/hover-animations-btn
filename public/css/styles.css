@@ -2879,9 +2879,9 @@ h4 {
 }
 
 .btn-E8:hover {
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
   -webkit-animation: animation_E8 1s linear infinite;
   animation: animation_E8 1s linear infinite;
 }
@@ -2916,6 +2916,7 @@ h4 {
   }
 }
 
+/* ------- Btn --> A8 -------*/
 /* -----------------------------------*/
 /* Btn ==> Row 9 from column A to E */
 /* ------- Btn --> A9 -------*/
