@@ -3489,14 +3489,65 @@ h4 {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: var(--dark-color-text);
+  color: var(--color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border: 2px solid black;
-  border-radius: var(--border-radius);
-  overflow: hidden;
+  border-radius: 2em;
   z-index: var(--z-normal);
+  background-size: 400%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#82f141), color-stop(yellow), color-stop(#00f7ff), to(#82f141));
+  background-image: -webkit-linear-gradient(left, #82f141, yellow, #00f7ff, #82f141);
+  background-image: -o-linear-gradient(left, #82f141, yellow, #00f7ff, #82f141);
+  background-image: linear-gradient(90deg, #82f141, yellow, #00f7ff, #82f141);
+}
+
+.btn-D10:hover {
+  -webkit-animation: animation_D10 8s linear infinite;
+  animation: animation_D10 8s linear infinite;
+}
+
+.btn-D10:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background-image: -webkit-gradient(linear, left top, right top, from(#82f141), color-stop(yellow), color-stop(#00f7ff), to(#82f141));
+  background-image: -webkit-linear-gradient(left, #82f141, yellow, #00f7ff, #82f141);
+  background-image: -o-linear-gradient(left, #82f141, yellow, #00f7ff, #82f141);
+  background-image: linear-gradient(90deg, #82f141, yellow, #00f7ff, #82f141);
+  background-size: 400%;
+  border-radius: 2em;
+  opacity: 0;
+}
+
+.btn-D10:hover::before {
+  opacity: 1;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  -webkit-animation: animation_D10 8s linear infinite;
+  animation: animation_D10 8s linear infinite;
+}
+
+@-webkit-keyframes animation_D10 {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes animation_D10 {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
 }
 
 /* ------- Btn --> E10 -------*/

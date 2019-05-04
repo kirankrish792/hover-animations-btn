@@ -2,12 +2,57 @@
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: var(--dark-color-text);
+  color: var(--color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border: 2px solid hsl(0, 0%, 0%);
-  border-radius: var(--border-radius);
-  overflow: hidden;
+  border-radius: 2em;
   z-index: var(--z-normal);
+  background-size: 400%;
+  background-image: linear-gradient(
+    90deg,
+    hsl(98, 86%, 60%),
+    hsl(60, 100%, 50%),
+    hsl(182, 100%, 50%),
+    hsl(98, 86%, 60%)
+  );
+
+  &:hover {
+    animation: animation_D10 8s linear infinite;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background-image: linear-gradient(
+      90deg,
+      hsl(98, 86%, 60%),
+      hsl(60, 100%, 50%),
+      hsl(182, 100%, 50%),
+      hsl(98, 86%, 60%)
+    );
+    background-size: 400%;
+    border-radius: 2em;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    filter: blur(20px);
+    animation: animation_D10 8s linear infinite;
+  }
+}
+
+@keyframes animation_D10 {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
 }
