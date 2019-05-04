@@ -2,12 +2,34 @@
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: var(--dark-color-text);
+  color: var(--color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  font-weight: 600;
-  border: 2px solid hsl(0, 0%, 0%);
-  border-radius: var(--border-radius);
+  font-weight: 400;
+  border: 4px solid hsl(0, 0%, 100%);
+  border-radius: 2.5em;
   overflow: hidden;
   z-index: var(--z-normal);
+  background-color: var(--color-dark-bg);
+  box-shadow: 0 0 0 10px var(--color-dark-bg);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, #1366ff, #ff0b6d);
+    z-index: -1;
+    border-radius: 2.5em;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover::before {
+    transform-origin: left;
+    transform: scalex(1);
+  }
 }
