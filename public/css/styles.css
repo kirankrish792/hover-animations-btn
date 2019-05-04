@@ -3441,6 +3441,47 @@ h4 {
   border-radius: var(--border-radius);
   overflow: hidden;
   z-index: var(--z-normal);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.btn-C10:hover .span-C10:nth-child(odd),
+.btn-C10:hover .span-C10:nth-child(even) {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.span-C10 {
+  display: inline-block;
+}
+
+.span-C10:nth-child(odd)::before {
+  content: attr(data-text);
+  position: absolute;
+  -webkit-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  transform: translateY(200%);
+}
+
+.span-C10:nth-child(odd) {
+  -webkit-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+
+.span-C10:nth-child(even)::before {
+  content: attr(data-text);
+  position: absolute;
+  -webkit-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+
+.span-C10:nth-child(even) {
+  -webkit-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  transform: translateY(200%);
 }
 
 /* ------- Btn --> D10 -------*/
