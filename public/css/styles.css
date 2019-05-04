@@ -2633,14 +2633,51 @@ h4 {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: var(--dark-color-text);
+  color: var(--color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border: 2px solid black;
+  border: 5px solid black;
   border-radius: var(--border-radius);
   overflow: hidden;
   z-index: var(--z-normal);
+  background-color: var(--color-dark-bg);
+  -webkit-box-shadow: inset 0 0 30px black;
+  box-shadow: inset 0 0 30px black;
+}
+
+.btn-B8::before, .btn-B8::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transform: skewX(-15deg);
+  -ms-transform: skewX(-15deg);
+  transform: skewX(-15deg);
+}
+
+.btn-B8::before {
+  left: -10px;
+  width: 100px;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.btn-B8::after {
+  left: -70px;
+  width: 50px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.btn-B8:hover::before, .btn-B8:hover::after {
+  left: 110%;
 }
 
 /* ------- Btn --> C8 -------*/
