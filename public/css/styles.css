@@ -3580,6 +3580,386 @@ h4 {
   transform: rotate(0deg);
 }
 
+/* Btn ==> Row 11 from column A to E */
+/* ------- Btn --> A11 -------*/
+.btn-A11 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> B11 -------*/
+.btn-B11 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> C11 -------*/
+.btn-C11 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> D11 -------*/
+.btn-D11 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> E11 -------*/
+.btn-E11 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* Btn ==> Row 12 from column A to E */
+/* ------- Btn --> A12 -------*/
+.btn-A12 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> B12 -------*/
+.btn-B12 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> C12 -------*/
+.btn-C12 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> D12 -------*/
+.btn-D12 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> E12 -------*/
+.btn-E12 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* Btn ==> Row 13 from column A to E */
+/* ------- Btn --> A13 -------*/
+.btn-A13 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> B13 -------*/
+.btn-B13 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> C13 -------*/
+.btn-C13 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> D13 -------*/
+.btn-D13 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> E13 -------*/
+.btn-E13 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* Btn ==> Row 14 from column A to E */
+/* ------- Btn --> A14 -------*/
+.btn-A14 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> B14 -------*/
+.btn-B14 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> C14 -------*/
+.btn-C14 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> D14 -------*/
+.btn-D14 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> E14 -------*/
+.btn-E14 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* Btn ==> Row 15s from column A to E */
+/* ------- Btn --> A15 -------*/
+.btn-A15 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> B15 -------*/
+.btn-B15 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> C15 -------*/
+.btn-C15 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> D15 -------*/
+.btn-D15 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+/* ------- Btn --> E15 -------*/
+.btn-E15 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid black;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
 /* -----------------------------------*/
 /* -----------------------------------*/
 /* Styles for page Footer */
