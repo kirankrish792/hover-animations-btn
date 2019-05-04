@@ -69,6 +69,7 @@ a {
 }
 
 /* -----------------------------------*/
+/* -----------------------------------*/
 /* Index header and main body */
 .principal-section {
   height: 100%;
@@ -239,6 +240,7 @@ s .body-wrap-btn {
   align-items: center;
 }
 
+/* -----------------------------------*/
 /* -----------------------------------*/
 /* Tag-btn in wraps-buttons */
 .tag-btn {
@@ -550,7 +552,6 @@ s .body-wrap-btn {
   font-weight: 400;
 }
 
-/* -----------------------------------*/
 /* Btn ==> Row 2 from column A to E */
 /* ------- Btn --> A2 -------*/
 .btn-A2 {
@@ -929,7 +930,6 @@ s .body-wrap-btn {
   color: var(--dark-color-text);
 }
 
-/* -----------------------------------*/
 /* Btn ==> Row 3 from column A to E */
 /* ------- Btn --> A3 -------*/
 .btn-A3 {
@@ -1186,7 +1186,6 @@ s .body-wrap-btn {
   transform: perspective(1000px) rotateX(-80deg);
 }
 
-/* -----------------------------------*/
 /* Btn ==> Row 4 from column A to E */
 /* ------- Btn --> A4 -------*/
 .btn-A4 {
@@ -1537,7 +1536,6 @@ h4 {
   transform: rotate(60deg);
 }
 
-/* -----------------------------------*/
 /* Btn ==> Row 5 from column A to E */
 /* ------- Btn --> A5 -------*/
 .btn-A5 {
@@ -1887,7 +1885,6 @@ h4 {
   transform: rotateX(180deg);
 }
 
-/* -----------------------------------*/
 /* Btn ==> Row 6 from column A to E */
 /* ------- Btn --> A6 -------*/
 .btn-A6 {
@@ -2301,7 +2298,6 @@ h4 {
   }
 }
 
-/* -----------------------------------*/
 /* Btn ==> Row 7 from column A to E */
 /* ------- Btn --> A7 -------*/
 .btn-A7 {
@@ -2571,7 +2567,6 @@ h4 {
   transform: rotateX(0deg);
 }
 
-/* -----------------------------------*/
 /* Btn ==> Row 8 from column A to E */
 /* ------- Btn --> A8 -------*/
 .btn-A8 {
@@ -2916,8 +2911,6 @@ h4 {
   }
 }
 
-/* ------- Btn --> A8 -------*/
-/* -----------------------------------*/
 /* Btn ==> Row 9 from column A to E */
 /* ------- Btn --> A9 -------*/
 .btn-A9 {
@@ -3233,7 +3226,6 @@ h4 {
   left: 100%;
 }
 
-/* -----------------------------------*/
 /* Btn ==> Row 10 from column A to E */
 /* ------- Btn --> A10 -------*/
 .btn-A10 {
@@ -3589,6 +3581,7 @@ h4 {
 }
 
 /* -----------------------------------*/
+/* -----------------------------------*/
 /* Styles for page Footer */
 .main-footer {
   display: -webkit-box;
@@ -3640,6 +3633,7 @@ h4 {
 }
 
 /* -----------------------------------*/
+/* -----------------------------------*/
 /* Styles Media Query ===> max-width: 1740px */
 @media only screen and (max-width: 1740px) {
   :root {
@@ -3673,3 +3667,5 @@ h4 {
     display: none;
   }
 }
+
+/* -----------------------------------*/

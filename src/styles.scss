@@ -1,71 +1,47 @@
 /* Styles globales and Variables CSS */
 @import "sass/components/main-scss-components/variables.scss";
 @import "sass/components/main-scss-components/global.scss";
+/* -----------------------------------*/
 
 /* -----------------------------------*/
 /* Index header and main body */
 @import "sass/components/main-scss-components/header.scss";
 @import "sass/components/main-scss-components/main.scss";
+/* -----------------------------------*/
 
 /* -----------------------------------*/
 /* Tag-btn in wraps-buttons */
 @import "sass/components/main-scss-components/tag-btn.scss";
-
 /* -----------------------------------*/
+
 /* Btn ==> Row 1 from column A to E */
 @import "sass/layout/grid-row-1/main-grid-row-1";
-
-/* -----------------------------------*/
 /* Btn ==> Row 2 from column A to E */
 @import "sass/layout/grid-row-2/main-grid-row-2";
-
-/* -----------------------------------*/
 /* Btn ==> Row 3 from column A to E */
 @import "sass/layout/grid-row-3/main-grid-row-3";
-
-/* -----------------------------------*/
 /* Btn ==> Row 4 from column A to E */
 @import "sass/layout/grid-row-4/main-grid-row-4";
-
-/* -----------------------------------*/
 /* Btn ==> Row 5 from column A to E */
 @import "sass/layout/grid-row-5/main-grid-row-5";
-
-/* -----------------------------------*/
 /* Btn ==> Row 6 from column A to E */
 @import "sass/layout/grid-row-6/main-grid-row-6";
-
-/* -----------------------------------*/
 /* Btn ==> Row 7 from column A to E */
 @import "sass/layout/grid-row-7/main-grid-row-7";
-
-/* -----------------------------------*/
 /* Btn ==> Row 8 from column A to E */
 @import "sass/layout/grid-row-8/main-grid-row-8";
-/* ------- Btn --> A8 -------*/
-
-/* -----------------------------------*/
 /* Btn ==> Row 9 from column A to E */
 @import "sass/layout/grid-row-9/main-grid-row-9";
-
-/* -----------------------------------*/
 /* Btn ==> Row 10 from column A to E */
-// @import "sass/layout/grid-row-10/main-grid-row-10";
-/* ------- Btn --> A10 -------*/
-@import "sass/layout/grid-row-10/row-A10.scss";
-/* ------- Btn --> B10 -------*/
-@import "sass/layout/grid-row-10/row-B10.scss";
-/* ------- Btn --> C10 -------*/
-@import "sass/layout/grid-row-10/row-C10.scss";
-/* ------- Btn --> D10 -------*/
-@import "sass/layout/grid-row-10/row-D10.scss";
-/* ------- Btn --> E10 -------*/
-@import "sass/layout/grid-row-10/row-E10.scss";
+@import "sass/layout/grid-row-10/main-grid-row-10";
+/* -----------------------------------*/
 
 /* -----------------------------------*/
 /* Styles for page Footer */
 @import "sass/components/main-scss-components/footer.scss";
+/* -----------------------------------*/
 
 /* -----------------------------------*/
 /* Styles Media Query ===> max-width: 1740px */
 @import "sass/components/scss-mediaQuerys/maxW-1740";
+/* -----------------------------------*/
