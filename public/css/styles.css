@@ -2924,14 +2924,57 @@ h4 {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: var(--dark-color-text);
+  color: #555;
+  background-color: #00072f;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border: 2px solid black;
-  border-radius: var(--border-radius);
+  border-radius: 2.5em;
   overflow: hidden;
   z-index: var(--z-normal);
+}
+
+.btn-A9:hover {
+  color: #ffffff;
+  -webkit-box-shadow: -5px 0 30px #e71493, -5px 0 30px #7b00ff;
+  box-shadow: -5px 0 30px #e71493, -5px 0 30px #7b00ff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.btn-A9::before, .btn-A9::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2.5em;
+  height: 3em;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  mix-blend-mode: lighten;
+  z-index: -1;
+}
+
+.btn-A9::before {
+  left: 0;
+}
+
+.btn-A9::after {
+  right: 0;
+}
+
+.btn-A9:hover::before {
+  background-color: #e61492;
+  -webkit-transform: scaleX(4);
+  -ms-transform: scaleX(4);
+  transform: scaleX(4);
+}
+
+.btn-A9:hover::after {
+  background-color: #7b00ff;
+  -webkit-transform: scaleX(4);
+  -ms-transform: scaleX(4);
+  transform: scaleX(4);
 }
 
 /* ------- Btn --> B9 -------*/
