@@ -3134,14 +3134,59 @@ h4 {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: var(--dark-color-text);
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
   font-weight: 600;
   border: 2px solid black;
-  border-radius: var(--border-radius);
   overflow: hidden;
   z-index: var(--z-normal);
+  background-color: var(--color-body-bg);
+}
+
+.btn-D9::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 70px;
+  background-color: var(--color-dark-bg);
+  -webkit-transform: skewX(-15deg);
+  -ms-transform: skewX(-15deg);
+  transform: skewX(-15deg);
+  -webkit-animation: animation_D9 3s linear infinite;
+  animation: animation_D9 3s linear infinite;
+}
+
+.btn-D9:hover::before {
+  width: 100%;
+  -webkit-transform: skewX(0);
+  -ms-transform: skewX(0);
+  transform: skewX(0);
+  -webkit-animation: none;
+  animation: none;
+}
+
+.span-D9 {
+  font-size: var(--normal-font-size);
+  color: var(--color-text);
+  mix-blend-mode: difference;
+}
+
+@-webkit-keyframes animation_D9 {
+  0% {
+    left: -70px;
+  }
+  100% {
+    left: calc(100% + 10px);
+  }
+}
+
+@keyframes animation_D9 {
+  0% {
+    left: -70px;
+  }
+  100% {
+    left: calc(100% + 10px);
+  }
 }
 
 /* ------- Btn --> E9 -------*/
