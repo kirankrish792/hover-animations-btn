@@ -3244,10 +3244,124 @@ h4 {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border: 2px solid black;
   border-radius: var(--border-radius);
   overflow: hidden;
   z-index: var(--z-normal);
+}
+
+.btn-A10:hover {
+  color: var(--color-text);
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.btn-A10::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--color-dark-bg);
+  z-index: -1;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.btn-A10:hover::before {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.btn-A10:hover .span-A10 {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-A10:hover .span-A10-1 {
+  left: 50%;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.btn-A10:hover .span-A10-3 {
+  right: 50%;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.btn-A10:hover .span-A10-2 {
+  top: 10%;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+.btn-A10:hover .span-A10-4 {
+  bottom: 10%;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+.span-A10 {
+  position: absolute;
+  background-color: var(--color-dark-bg);
+  display: block;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+}
+
+.span-A10-1,
+.span-A10-3 {
+  width: 50px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
+.span-A10-2,
+.span-A10-4 {
+  width: 4px;
+  height: 50px;
+  left: calc(50% - 2px);
+}
+
+.span-A10-1 {
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  left: -100px;
+}
+
+.span-A10-3 {
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+  right: -100px;
+}
+
+.span-A10-2 {
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+  top: -100px;
+}
+
+.span-A10-4 {
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+  bottom: -100px;
 }
 
 /* ------- Btn --> B10 -------*/
