@@ -3565,6 +3565,29 @@ h4 {
   z-index: var(--z-normal);
 }
 
+.btn-E10::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #74d5fc;
+  z-index: -1;
+  -webkit-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.btn-E10:hover::before {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
 /* -----------------------------------*/
 /* Styles for page Footer */
 .main-footer {
