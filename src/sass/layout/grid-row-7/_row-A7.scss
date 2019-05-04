@@ -2,12 +2,42 @@
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: var(--dark-color-text);
+  color: var(--color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border: 2px solid hsl(0, 0%, 0%);
-  border-radius: var(--border-radius);
-  overflow: hidden;
   z-index: var(--z-normal);
+  background-color: #ff3318;
+
+  &::before,
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--normal-paddings);
+    text-align: center;
+  }
+
+  &::before {
+    background-color: #2ecc48;
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(270deg);
+  }
+
+  &:hover::before {
+    transform: perspective(1000px) rotateX(0);
+  }
+  &::after {
+    background-color: #3c78e7;
+    transform-origin: bottom;
+    transform: perspective(1000px) rotateX(-270deg);
+    transition-delay: 0.3s;
+  }
+
+  &:hover::after {
+    transform: perspective(1000px) rotateX(0);
+  }
 }

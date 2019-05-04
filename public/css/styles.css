@@ -2308,14 +2308,54 @@ h4 {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: var(--dark-color-text);
+  color: var(--color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border: 2px solid black;
-  border-radius: var(--border-radius);
-  overflow: hidden;
   z-index: var(--z-normal);
+  background-color: #ff3318;
+}
+
+.btn-A7::before, .btn-A7::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: var(--normal-paddings);
+  text-align: center;
+}
+
+.btn-A7::before {
+  background-color: #2ecc48;
+  -webkit-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-transform: perspective(1000px) rotateX(270deg);
+  transform: perspective(1000px) rotateX(270deg);
+}
+
+.btn-A7:hover::before {
+  -webkit-transform: perspective(1000px) rotateX(0);
+  transform: perspective(1000px) rotateX(0);
+}
+
+.btn-A7::after {
+  background-color: #3c78e7;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  -webkit-transform: perspective(1000px) rotateX(-270deg);
+  transform: perspective(1000px) rotateX(-270deg);
+  -webkit-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.btn-A7:hover::after {
+  -webkit-transform: perspective(1000px) rotateX(0);
+  transform: perspective(1000px) rotateX(0);
 }
 
 /* ------- Btn --> B7 -------*/
