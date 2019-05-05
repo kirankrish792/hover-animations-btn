@@ -28,7 +28,7 @@
 }
 
 .rect-A11 {
-  stroke: #000000;
+  stroke: var(--color-dark-bg);
   stroke-width: 5px;
   transition: 0.5s;
   stroke-dasharray: 540, 500;
