@@ -3784,6 +3784,133 @@ h4 {
   z-index: var(--z-normal);
 }
 
+.btn-E11:hover {
+  background-color: #ff002b;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transition-delay: 0.7s;
+  -o-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+  color: white;
+}
+
+.btn-E11::before, .btn-E11::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) scale(1);
+  -ms-transform: translateY(-50%) scale(1);
+  transform: translateY(-50%) scale(1);
+  width: 10px;
+  height: 10px;
+  background-color: #ff002b;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.btn-E11::before {
+  left: 100%;
+}
+
+.btn-E11:hover:before {
+  -webkit-animation: animatio_E11_before 0.7s ease forwards;
+  animation: animatio_E11_before 0.7s ease forwards;
+}
+
+.btn-E11::after {
+  right: 100%;
+}
+
+.btn-E11:hover::after {
+  -webkit-animation: animatio_E11_after 0.7s ease forwards;
+  animation: animatio_E11_after 0.7s ease forwards;
+}
+
+@-webkit-keyframes animatio_E11_before {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: 20px;
+    -webkit-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+  }
+  51% {
+    left: 20px;
+    -webkit-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(20);
+    transform: translateY(-50%) scale(20);
+    left: 20px;
+  }
+}
+
+@keyframes animatio_E11_before {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: 20px;
+    -webkit-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+  }
+  51% {
+    left: 20px;
+    -webkit-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(20);
+    transform: translateY(-50%) scale(20);
+    left: 20px;
+  }
+}
+
+@-webkit-keyframes animatio_E11_after {
+  0% {
+    right: 100%;
+  }
+  50% {
+    right: 20px;
+    -webkit-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+  }
+  51% {
+    right: 20px;
+    -webkit-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(20);
+    transform: translateY(-50%) scale(20);
+    right: 20px;
+  }
+}
+
+@keyframes animatio_E11_after {
+  0% {
+    right: 100%;
+  }
+  50% {
+    right: 20px;
+    -webkit-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+  }
+  51% {
+    right: 20px;
+    -webkit-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(20);
+    transform: translateY(-50%) scale(20);
+    right: 20px;
+  }
+}
+
 /* Btn ==> Row 12 from column A to E */
 /* ------- Btn --> A12 -------*/
 .btn-A12 {
