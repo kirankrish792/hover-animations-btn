@@ -11,15 +11,15 @@
   overflow: hidden;
   z-index: var(--z-normal);
 
-  &:hover .rect-A12 {
+  &:hover .rect-B11 {
     stroke-dasharray: 3.11em, 10.27em;
     stroke: #0980c5;
     stroke-dashoffset: 295;
   }
 }
 
-.svg-A12,
-.rect-A12 {
+.svg-B11,
+.rect-B11 {
   position: absolute;
   top: 0;
   left: 0;
@@ -28,7 +28,7 @@
   fill: transparent;
 }
 
-.rect-A12 {
+.rect-B11 {
   stroke: var(--color-dark-bg);
   stroke-width: 5px;
   transition: 0.5s;

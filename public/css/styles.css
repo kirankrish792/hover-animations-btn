@@ -3632,14 +3632,14 @@ h4 {
   z-index: var(--z-normal);
 }
 
-.btn-B11:hover .rect-A12 {
+.btn-B11:hover .rect-B11 {
   stroke-dasharray: 3.11em, 10.27em;
   stroke: #0980c5;
   stroke-dashoffset: 295;
 }
 
-.svg-A12,
-.rect-A12 {
+.svg-B11,
+.rect-B11 {
   position: absolute;
   top: 0;
   left: 0;
@@ -3648,7 +3648,7 @@ h4 {
   fill: transparent;
 }
 
-.rect-A12 {
+.rect-B11 {
   stroke: var(--color-dark-bg);
   stroke-width: 5px;
   -webkit-transition: 0.5s;
@@ -3666,10 +3666,40 @@ h4 {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border-radius: var(--border-radius);
-  border: 2px solid black;
   overflow: hidden;
   z-index: var(--z-normal);
+}
+
+.btn-C11:hover {
+  background-color: #e6ffe6;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.btn-C11:hover .rect-C11 {
+  stroke-dashoffset: 0;
+  stroke: #28e031;
+}
+
+.svg-C11,
+.rect-C11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+}
+
+.rect-C11 {
+  stroke: var(--color-dark-bg);
+  stroke-width: 5px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  stroke-dasharray: 540;
+  stroke-dashoffset: 540;
 }
 
 /* ------- Btn --> D11 -------*/
