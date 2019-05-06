@@ -4938,9 +4938,9 @@ h4 {
   -webkit-perspective: 30rem;
   perspective: 30rem;
   /* Solo con el fin de igual VISUALMENTE el tamaño, inecesario para su uso*/
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .cover-btn-E13 {
@@ -4951,9 +4951,13 @@ h4 {
   transform-style: preserve-3d;
   text-align: center;
   z-index: var(--z-normal);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.cover-btn-E13,
 .cover-btn-E13 > * {
   position: absolute;
   top: 0;
@@ -4969,8 +4973,7 @@ h4 {
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
 }
 
-.inner-btn-E13,
-.outer-btn-E13 {
+.inner-btn-E13 {
   border-radius: var(--border-radius);
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.1)));
   background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
@@ -4979,6 +4982,11 @@ h4 {
 }
 
 .outer-btn-E13 {
+  border-radius: var(--border-radius);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+  background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
   -webkit-transform: translateZ(0.25em);
   transform: translateZ(0.25em);
 }
@@ -4993,12 +5001,20 @@ h4 {
   transform-origin: center top;
 }
 
+.social-button-btn-E13 {
+  -webkit-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
 .social-button-btn-E13:hover .cover-btn-E13 {
   -webkit-transform: rotateX(-120deg);
   transform: rotateX(-120deg);
 }
 
-.social-button-btn-E13,
 .social-button-btn-E13 div {
   -webkit-transition-duration: 0.7s;
   -o-transition-duration: 0.7s;
