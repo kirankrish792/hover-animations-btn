@@ -10,4 +10,42 @@
   border: 2px solid hsl(0, 0%, 0%);
   overflow: hidden;
   z-index: var(--z-normal);
+
+  &:hover {
+    color: var(--color-text);
+
+    &::before,
+    &::after {
+      transform: scaleX(1);
+      transition: transform 0.3s;
+    }
+    &::before {
+      transform-origin: right;
+    }
+    &::after {
+      transform-origin: left;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background-color: hsl(0, 0%, 0%);
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  &::before {
+    left: 0;
+    transform-origin: left;
+  }
+
+  &::after {
+    right: 0;
+    transform-origin: right;
+  }
 }
