@@ -6,8 +6,42 @@
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border-radius: var(--border-radius);
-  border: 2px solid hsl(0, 0%, 0%);
-  overflow: hidden;
+  border-radius: 2.5em;
   z-index: var(--z-normal);
+  background-color: #49c6ff;
+  transform-style: preserve-3d;
+  transition: 2s;
+
+  &:hover {
+    transform: rotateX(360deg);
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border: 2px solid hsl(0, 0%, 0%);
+    border-radius: 2.5em;
+  }
+
+  &::before {
+    top: 4px;
+    left: 6px;
+    right: 6px;
+    bottom: 4px;
+    transform: perspective(500px) translateZ(10px);
+  }
+  &::after {
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    transform: perspective(500px) translateZ(-10px);
+  }
+}
+
+.span-C13 {
+  display: block;
+  transform-style: preserve-3d;
+  transform: perspective(100px) translateZ(15px);
 }
