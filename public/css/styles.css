@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Styles globales and Variables CSS */
 :root {
   /*--- Typography variables ---*/
@@ -4912,15 +4913,136 @@ h4 {
 .btn-E13 {
   display: block;
   position: relative;
-  padding: var(--normal-paddings);
   color: var(--dark-color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border-radius: var(--border-radius);
-  border: 2px solid black;
-  overflow: hidden;
   z-index: var(--z-normal);
+}
+
+.social-button-btn-E13 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.75rem 0.75rem 0;
+  background: #eee;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-perspective: 30rem;
+  perspective: 30rem;
+  /* Solo con el fin de igual VISUALMENTE el tamaño, inecesario para su uso*/
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.cover-btn-E13 {
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  text-align: center;
+  z-index: var(--z-normal);
+}
+
+.cover-btn-E13,
+.cover-btn-E13 > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cover-btn-E13 svg {
+  width: 2.75em;
+  height: 2.75em;
+  -webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
+}
+
+.inner-btn-E13,
+.outer-btn-E13 {
+  border-radius: var(--border-radius);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+  background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.outer-btn-E13 {
+  -webkit-transform: translateZ(0.25em);
+  transform: translateZ(0.25em);
+}
+
+.edge-btn-E13 {
+  top: 0.25em;
+  height: 0.25em;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: center top;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.social-button-btn-E13:hover .cover-btn-E13 {
+  -webkit-transform: rotateX(-120deg);
+  transform: rotateX(-120deg);
+}
+
+.social-button-btn-E13,
+.social-button-btn-E13 div {
+  -webkit-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+.shadow-btn-E13 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3.2em;
+  border-radius: 0.5em;
+  opacity: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, transparent 100%);
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: center top;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.social-button-btn-E13:hover .shadow-btn-E13 {
+  -webkit-transform: rotateX(45deg) scale(0.95);
+  transform: rotateX(45deg) scale(0.95);
+  opacity: 1;
+}
+
+.twitter-btn-E13 .inner-btn-E13 {
+  background-color: #67e2fe;
+}
+
+.twitter-btn-E13 .outer-btn-E13 {
+  background-color: #2ec8fa;
+}
+
+.twitter-btn-E13 .edge-btn-E13 {
+  background-color: #20c7f3;
 }
 
 /* Btn ==> Row 14 from column A to E */
