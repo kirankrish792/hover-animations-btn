@@ -3919,11 +3919,234 @@ h4 {
   color: var(--dark-color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  font-weight: 600;
-  border-radius: var(--border-radius);
-  border: 2px solid black;
-  overflow: hidden;
+  font-weight: 400;
   z-index: var(--z-normal);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-A12:hover {
+  background-color: #2196f3;
+  -webkit-box-shadow: -30px 30px 50px rgba(0, 0, 0, 0.3);
+  box-shadow: -30px 30px 50px rgba(0, 0, 0, 0.3);
+  -webkit-transform: rotate(-30deg) skew(25deg);
+  -ms-transform: rotate(-30deg) skew(25deg);
+  transform: rotate(-30deg) skew(25deg);
+  color: var(--color-text);
+  -webkit-transition-delay: 1.5s;
+  -o-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+}
+
+.btn-A12::before, .btn-A12::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: black;
+  -webkit-transform-style: linear;
+  transform-style: linear;
+  -webkit-transition-property: width, opacity, -webkit-transform, -webkit-box-shadow;
+  transition-property: width, opacity, -webkit-transform, -webkit-box-shadow;
+  -o-transition-property: width, opacity, transform, box-shadow;
+  transition-property: width, opacity, transform, box-shadow;
+  transition-property: width, opacity, transform, box-shadow, -webkit-transform, -webkit-box-shadow;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.btn-A12::before {
+  top: 0;
+  left: 0;
+}
+
+.btn-A12::after {
+  top: 0;
+  right: 0;
+}
+
+.btn-A12:hover::before {
+  -webkit-animation: animation_A12_before 1.5s linear forwards;
+  animation: animation_A12_before 1.5s linear forwards;
+}
+
+.btn-A12:hover::after {
+  -webkit-animation: animation_A12_after 1.5s linear forwards;
+  animation: animation_A12_after 1.5s linear forwards;
+}
+
+@-webkit-keyframes animation_A12_before {
+  0% {
+    width: 0;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  25% {
+    width: 100%;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  50% {
+    width: 100%;
+    opacity: 0.1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  75% {
+    width: 100%;
+    opacity: 0.1;
+    -webkit-transform: translate(5px, -5px);
+    transform: translate(5px, -5px);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  100% {
+    width: 100%;
+    opacity: 0.1;
+    -webkit-transform: translate(5px, -5px);
+    transform: translate(5px, -5px);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes animation_A12_before {
+  0% {
+    width: 0;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  25% {
+    width: 100%;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  50% {
+    width: 100%;
+    opacity: 0.1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  75% {
+    width: 100%;
+    opacity: 0.1;
+    -webkit-transform: translate(5px, -5px);
+    transform: translate(5px, -5px);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  100% {
+    width: 100%;
+    opacity: 0.1;
+    -webkit-transform: translate(5px, -5px);
+    transform: translate(5px, -5px);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@-webkit-keyframes animation_A12_after {
+  0% {
+    width: 0;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  25% {
+    width: 100%;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  50% {
+    width: 100%;
+    opacity: 0.1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  75% {
+    width: 100%;
+    opacity: 0.1;
+    -webkit-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  100% {
+    width: 100%;
+    opacity: 0.1;
+    -webkit-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes animation_A12_after {
+  0% {
+    width: 0;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  25% {
+    width: 100%;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  50% {
+    width: 100%;
+    opacity: 0.1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  75% {
+    width: 100%;
+    opacity: 0.1;
+    -webkit-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  100% {
+    width: 100%;
+    opacity: 0.1;
+    -webkit-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* ------- Btn --> B12 -------*/
