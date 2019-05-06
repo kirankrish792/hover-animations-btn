@@ -1,7 +1,7 @@
-$color-A5: #b2fa2c;
+$color-A5: #46caff;
 
 .btn-A5 {
-  display: inherit;
+  display: block;
   position: relative;
   color: var(--dark-color-text);
   font-family: var(--body-font);
@@ -15,6 +15,7 @@ $color-A5: #b2fa2c;
   height: var(--height-btn);
   text-align: center;
   line-height: var(--height-btn);
+  // padding: 20px;
 
   &::before,
   &::after {
