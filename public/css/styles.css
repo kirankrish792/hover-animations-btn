@@ -5292,14 +5292,45 @@ h4 {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: var(--dark-color-text);
+  color: var(--color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border-radius: var(--border-radius);
-  border: 2px solid black;
   overflow: hidden;
   z-index: var(--z-normal);
+  background-color: #1aab8a;
+}
+
+.btn-C14:hover {
+  background: #fff;
+  color: #1aab8a;
+}
+
+.btn-C14:hover:before, .btn-C14:hover:after {
+  width: 100%;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.btn-C14:before, .btn-C14:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 3px;
+  width: 0;
+  background: #1aab8a;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.btn-C14:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
 }
 
 /* ------- Btn --> D14 -------*/
