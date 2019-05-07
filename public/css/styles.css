@@ -5064,17 +5064,116 @@ h4 {
 /* Btn ==> Row 14 from column A to E */
 /* ------- Btn --> A14 -------*/
 .btn-A14 {
-  display: block;
   position: relative;
-  padding: var(--normal-paddings);
+  display: block;
   color: var(--dark-color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  border-radius: var(--border-radius);
-  border: 2px solid black;
-  overflow: hidden;
+  width: 200px;
+  height: 50px;
   z-index: var(--z-normal);
+}
+
+.trapdoor-A14 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -25px;
+  width: 200px;
+  height: 50px;
+  -webkit-box-shadow: inset -7px 0px 12px -8px rgba(0, 0, 0, 0.3), inset 7px 0px 12px -8px rgba(0, 0, 0, 0.3);
+  box-shadow: inset -7px 0px 12px -8px rgba(0, 0, 0, 0.3), inset 7px 0px 12px -8px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-transition: background 0.4s ease-in-out;
+  -o-transition: background 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
+}
+
+.trapdoor-A14:hover {
+  background: #fff;
+}
+
+.trapdoor-A14:hover .door-A14 {
+  -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.trapdoor-A14:hover .top-A14 {
+  top: -50%;
+}
+
+.trapdoor-A14:hover .bottom-A14 {
+  top: 100%;
+}
+
+.trapdoor-A14 .twitter-follow-button {
+  margin-left: -77px;
+  position: absolute !important;
+  margin-top: -14px;
+  left: 50%;
+  top: 50%;
+}
+
+.top-A14 {
+  top: 0%;
+  left: 0px;
+}
+
+.top-A14:before {
+  top: 5px;
+}
+
+.bottom-A14 {
+  top: 50%;
+  left: 0px;
+}
+
+.bottom-A14:before {
+  top: -20px;
+}
+
+.door-A14 {
+  -webkit-transition: top 400ms, -webkit-box-shadow 200ms, -webkit-transform 300ms;
+  transition: top 400ms, -webkit-box-shadow 200ms, -webkit-transform 300ms;
+  -o-transition: top 400ms, box-shadow 200ms, transform 300ms;
+  transition: top 400ms, box-shadow 200ms, transform 300ms;
+  transition: top 400ms, box-shadow 200ms, transform 300ms, -webkit-box-shadow 200ms, -webkit-transform 300ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background-color: #fff;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+  border-left: 1px solid #4099ff;
+  border-right: 1px solid #4099ff;
+  height: 50%;
+}
+
+.door-A14:before {
+  font-family: "tweet", sans-serif;
+  position: absolute;
+  margin-left: -20px;
+  font-size: 35px;
+  display: block;
+  color: #4099ff;
+  content: "\e000";
+  width: 0px;
+  height: 20px;
+  left: 52%;
+}
+
+@font-face {
+  font-family: "tweet";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/277/tweet.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* ------- Btn --> B14 -------*/
