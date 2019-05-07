@@ -5963,21 +5963,100 @@ li.btn-D14:after {
 
 /* Btn ==> Row 16 from column A to E */
 /* ------- Btn --> A16 -------*/
-.btn-A16 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
-  background-color: #d9d9d9;
-  border-radius: var(--border-radius);
-  overflow: hidden;
+.icon-A16 {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-paperplane-A16 {
+  font-size: 1em;
+  color: #b3b3b3;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+
+.contact-button-A16 {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: #b3b3b3;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid #b3b3b3;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-button-A16 .span-A16 {
+  text-transform: none;
+  position: absolute;
+  color: #ee283e;
+  top: 20px;
+  left: 30px;
+  opacity: 0;
+  -webkit-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+}
+
+.contact-button-A16:hover {
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border: 2px solid #b3b3b3;
+  border-radius: 50px;
+  background-color: #b3b3b3;
+}
+
+.contact-button-A16:hover > .span-A16 {
+  opacity: 1;
+  -webkit-transition: all 0.25s ease-in-out 0.1s;
+  -o-transition: all 0.25s ease-in-out 0.1s;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+
+.contact-button-A16:hover:before {
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: #ee283e;
+}
+
+.contact-button-A16:before, .contact-button-A16:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 132px;
+  height: 25px;
+}
+
+.contact-button-A16:before {
+  border: 2px solid #ee283e;
+  background-color: #1f3944;
+  -webkit-transform: skew(-25deg);
+  -ms-transform: skew(-25deg);
+  transform: skew(-25deg);
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-button-A16:after {
+  content: "Available for work";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: #b3b3b3;
 }
 
 /* ------- Btn --> B16 -------*/
