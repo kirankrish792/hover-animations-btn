@@ -5477,7 +5477,7 @@ li.btn-D14:after {
   }
 }
 
-/* Btn ==> Row 15s from column A to E */
+/* Btn ==> Row 15 from column A to E */
 /* ------- Btn --> A15 -------*/
 .btn-A15 {
   display: block;
@@ -5961,7 +5961,461 @@ li.btn-D14:after {
   }
 }
 
-/* ------- Btn --> A15 -------*/
+/* Btn ==> Row 16 from column A to E */
+/* ------- Btn --> A16 -------*/
+.btn-A16 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> B16 -------*/
+.btn-B16 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> C16 -------*/
+.btn-C16 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> D16 -------*/
+.btn-D16 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> E16 -------*/
+.btn-E16 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* Btn ==> Row 17 from column A to E */
+/* ------- Btn --> A17 -------*/
+.btn-A17 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> B17 -------*/
+.btn-B17 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> C17 -------*/
+.btn-C17 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> D17 -------*/
+.btn-D17 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> E17 -------*/
+.btn-E17 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* Btn ==> Row 18 from column A to E */
+/* ------- Btn --> A18 -------*/
+.btn-A18 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> B18 -------*/
+.btn-B18 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> C18 -------*/
+.btn-C18 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> D18 -------*/
+.btn-D18 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> E18 -------*/
+.btn-E18 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* Btn ==> Row 19 from column A to E */
+/* ------- Btn --> A19 -------*/
+.btn-A19 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> B19 -------*/
+.btn-B19 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> C19 -------*/
+.btn-C19 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> D19 -------*/
+.btn-D19 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> E19 -------*/
+.btn-E19 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* Btn ==> Row 20 from column A to E */
+/* ------- Btn --> A20 -------*/
+.btn-A20 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> B20 -------*/
+.btn-B20 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> C20 -------*/
+.btn-C20 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> D20 -------*/
+.btn-D20 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* ------- Btn --> E20 -------*/
+.btn-E20 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: #d9d9d9;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
 /* -----------------------------------*/
 /* -----------------------------------*/
 /* Styles for page Footer */

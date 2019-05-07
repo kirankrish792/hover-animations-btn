@@ -1,0 +1,10 @@
+.btn-D19 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--width-btn);
+  height: var(--height-btn);
+  background-color: hsl(0, 0%, 85%);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
