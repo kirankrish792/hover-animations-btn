@@ -5706,15 +5706,79 @@ li.btn-D14:after {
 .btn-D15 {
   display: block;
   position: relative;
+  font-weight: 600;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}
+
+.button-btn-D15 {
+  -webkit-box-shadow: 0px 3px gray, 0px 4px #767676, 0px 5px #6c6c6c, 0px 6px #626262, 0px 7px #585858, 0px 8px #4e4e4e, 0px 14px 6px -1px gray;
+  box-shadow: 0px 3px gray, 0px 4px #767676, 0px 5px #6c6c6c, 0px 6px #626262, 0px 7px #585858, 0px 8px #4e4e4e, 0px 14px 6px -1px gray;
+  /* shadow */
+  -webkit-transition: -webkit-box-shadow 0.1s ease-in-out;
+  transition: -webkit-box-shadow 0.1s ease-in-out;
+  -o-transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.button-btn-D15:active {
+  -webkit-box-shadow: 0px 3px gray, 0px 4px #767676, 0px 5px #6c6c6c, 0px 6px #626262, 0px 7px #585858, 0px 8px #4e4e4e, 0px 10px 2px 0px rgba(128, 128, 128, 0.6);
+  box-shadow: 0px 3px gray, 0px 4px #767676, 0px 5px #6c6c6c, 0px 6px #626262, 0px 7px #585858, 0px 8px #4e4e4e, 0px 10px 2px 0px rgba(128, 128, 128, 0.6);
+  /* shadow */
+}
+
+.button-btn-D15:active .span-btn-D15 {
+  -webkit-transform: translate(0, 5px);
+  -ms-transform: translate(0, 5px);
+  transform: translate(0, 5px);
+  /* depth of button press */
+}
+
+.span-btn-D15 {
+  display: block;
   padding: var(--normal-paddings);
   color: var(--dark-color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  font-weight: 600;
+  background-color: #e8e8e8;
+  -webkit-box-shadow: 0px -1px #fff, 0px 1px 1px #ffffff;
+  box-shadow: 0px -1px #fff, 0px 1px 1px #ffffff;
+  /* bottom edge */
+  background-size: 100%, 100%, 100%, 4px 4px;
   border-radius: var(--border-radius);
-  border: 2px solid black;
-  overflow: hidden;
-  z-index: var(--z-normal);
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  -o-transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  text-shadow: 0px 1px #fff, 0px -1px #262f33;
+}
+
+.span-btn-D15:hover {
+  color: #3c8b40;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.span-btn-D15:hover:after {
+  color: #3c8b40;
+}
+
+.span-btn-D15:after {
+  content: "\f054";
+  font-family: fontAwesome;
+  display: block;
+  position: absolute;
+  right: 1em;
+  top: 1.1em;
+  font-weight: 700;
+  color: #444444;
+  color: var(--dark-color-text);
+  font-size: var(--normal-font-size);
 }
 
 /* ------- Btn --> E15 -------*/
