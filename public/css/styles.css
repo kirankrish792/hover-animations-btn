@@ -5607,18 +5607,99 @@ li.btn-D14:after {
 }
 
 /* ------- Btn --> C15 -------*/
-.btn-C15 {
-  display: block;
+.social-btns-C15 .social-btn-C15,
+.social-btns-C15 .social-btn-C15:before,
+.social-btns-C15 .social-btn-C15 .fa {
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  -o-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-btns-C15 .social-btn-C15:before {
+  top: 90%;
+  left: -110%;
+}
+
+.social-btns-C15 .social-btn-C15 .fa {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.social-btns-C15 .social-btn-C15.twitter-btn-C15:before {
+  background-color: #3cf;
+}
+
+.social-btns-C15 .social-btn-C15.twitter-btn-C15 .fa {
+  color: #3cf;
+}
+
+.social-btns-C15 .social-btn-C15.google-btn-C15:before {
+  background-color: #dc4a38;
+}
+
+.social-btns-C15 .social-btn-C15.google-btn-C15 .fa {
+  color: #dc4a38;
+}
+
+.social-btns-C15 .social-btn-C15:focus:before,
+.social-btns-C15 .social-btn-C15:hover:before {
+  top: -10%;
+  left: -10%;
+}
+
+.social-btns-C15 .social-btn-C15:focus .fa,
+.social-btns-C15 .social-btn-C15:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.social-btns-C15 {
+  height: 90px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.social-btns-C15 .social-btn-C15 {
+  display: inline-block;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 10px;
+  text-align: center;
   position: relative;
-  padding: var(--normal-paddings);
-  color: var(--dark-color-text);
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  font-weight: 600;
-  border-radius: var(--border-radius);
-  border: 2px solid black;
   overflow: hidden;
-  z-index: var(--z-normal);
+  border-radius: 28%;
+  -webkit-box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  opacity: 0.99;
+}
+
+.social-btns-C15 .social-btn-C15:before {
+  content: "";
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.social-btns-C15 .social-btn-C15 .fa {
+  font-size: 38px;
+  vertical-align: middle;
 }
 
 /* ------- Btn --> D15 -------*/
