@@ -5560,7 +5560,6 @@ li.btn-D14:after {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  color: var(--dark-color-text);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
@@ -5568,6 +5567,43 @@ li.btn-D14:after {
   border: 2px solid black;
   overflow: hidden;
   z-index: var(--z-normal);
+  text-transform: uppercase;
+  background-color: #222;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-B15:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#d9afd9), to(#97d9e1));
+  background-image: -webkit-linear-gradient(bottom, #d9afd9 0%, #97d9e1 100%);
+  background-image: -o-linear-gradient(bottom, #d9afd9 0%, #97d9e1 100%);
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  -ms-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn-B15:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  -ms-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.span-B15 {
+  position: relative;
+  z-index: 1;
+  color: var(--color-text);
 }
 
 /* ------- Btn --> C15 -------*/
