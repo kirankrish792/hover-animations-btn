@@ -15,25 +15,25 @@ $color3: hsl(0, 0%, 70%);
 .icon-paperplane-A16 {
   font-size: 1em;
   color: $color3;
-  margin-left: 1px;
+  margin-left: 10px;
   margin-top: 5px;
 }
 
 .contact-button-A16 {
   position: relative;
-  -webkit-perspective: 1000;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
+  perspective: 1000;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
   color: $color3;
-  text-decoration: none;
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 1.2em;
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: var(--normal-font-size);
   border: 2px solid $color3;
-  border-radius: 4px;
-  padding: 20px 60px 20px 55px;
+  border-radius: var(--border-radius);
+  padding: var(--normal-paddings);
   transition: 0.3s ease-in-out;
+  z-index: var(--z-normal);
 
   .span-A16 {
     text-transform: none;

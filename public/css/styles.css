@@ -5973,27 +5973,30 @@ li.btn-D14:after {
 .icon-paperplane-A16 {
   font-size: 1em;
   color: #b3b3b3;
-  margin-left: 1px;
+  margin-left: 10px;
   margin-top: 5px;
 }
 
 .contact-button-A16 {
   position: relative;
   -webkit-perspective: 1000;
+  perspective: 1000;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   color: #b3b3b3;
-  text-decoration: none;
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 1.2em;
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: var(--normal-font-size);
   border: 2px solid #b3b3b3;
-  border-radius: 4px;
-  padding: 20px 60px 20px 55px;
+  border-radius: var(--border-radius);
+  padding: var(--normal-paddings);
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  z-index: var(--z-normal);
 }
 
 .contact-button-A16 .span-A16 {
@@ -6061,438 +6064,293 @@ li.btn-D14:after {
 
 /* ------- Btn --> B16 -------*/
 .btn-B16 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> C16 -------*/
 .btn-C16 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> D16 -------*/
 .btn-D16 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
 }
 
 /* ------- Btn --> E16 -------*/
 .btn-E16 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* Btn ==> Row 17 from column A to E */
 /* ------- Btn --> A17 -------*/
 .btn-A17 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> B17 -------*/
 .btn-B17 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> C17 -------*/
 .btn-C17 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> D17 -------*/
 .btn-D17 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> E17 -------*/
 .btn-E17 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* Btn ==> Row 18 from column A to E */
 /* ------- Btn --> A18 -------*/
 .btn-A18 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> B18 -------*/
 .btn-B18 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> C18 -------*/
 .btn-C18 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> D18 -------*/
 .btn-D18 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> E18 -------*/
 .btn-E18 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* Btn ==> Row 19 from column A to E */
 /* ------- Btn --> A19 -------*/
 .btn-A19 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> B19 -------*/
 .btn-B19 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> C19 -------*/
 .btn-C19 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> D19 -------*/
 .btn-D19 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> E19 -------*/
 .btn-E19 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* Btn ==> Row 20 from column A to E */
 /* ------- Btn --> A20 -------*/
 .btn-A20 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> B20 -------*/
 .btn-B20 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> C20 -------*/
 .btn-C20 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> D20 -------*/
 .btn-D20 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* ------- Btn --> E20 -------*/
 .btn-E20 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: var(--width-btn);
-  height: var(--height-btn);
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
+  border: 2px solid #000000;
   overflow: hidden;
+  z-index: var(--z-normal);
 }
 
 /* -----------------------------------*/
