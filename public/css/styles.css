@@ -6797,11 +6797,41 @@ li.btn-D14:after {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  background-color: #d9d9d9;
+  background-color: #f4e8ff;
   border-radius: var(--border-radius);
-  border: 2px solid #000000;
+  border: 2px solid #6b29a7;
+  color: #6b29a7;
   overflow: hidden;
   z-index: var(--z-normal);
+}
+
+.btn-A18:hover {
+  color: #d4c0e5;
+}
+
+.btn-A18:hover .span-btn-A18 {
+  width: 300%;
+  height: 300%;
+}
+
+.btn-A18:active .span-btn-A18 {
+  background-color: #510397;
+}
+
+.span-btn-A18 {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #31025b;
+  -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 /* ------- Btn --> B18 -------*/
