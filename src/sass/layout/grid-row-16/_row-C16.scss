@@ -9,7 +9,7 @@
   z-index: var(--z-normal);
 
   &:hover {
-    color: #ffffff;
+    color: var(--color-text);
 
     &:before {
       transform: scaleY(1);
