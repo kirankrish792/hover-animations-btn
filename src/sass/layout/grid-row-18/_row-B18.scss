@@ -1,10 +1,29 @@
 .btn-B18 {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  padding: var(--normal-paddings);
-  background-color: hsl(0, 0%, 85%);
-  border-radius: var(--border-radius);
-  border: 2px solid #000000;
-  overflow: hidden;
+  width: 240px;
+  height: 60px;
+  border-radius: 27px;
+  color: #fff;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: var(--z-normal);
+}
+
+.span-btn-B18 {
+  position: relative;
+  z-index: var(--z-tooltip);
+}
+
+.btn-B18 canvas {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  bottom: -50px;
+  left: -50px;
   z-index: var(--z-normal);
 }
