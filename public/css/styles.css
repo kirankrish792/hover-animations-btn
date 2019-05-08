@@ -6872,15 +6872,60 @@ li.btn-D14:after {
 }
 
 /* ------- Btn --> C18 -------*/
-.btn-C18 {
-  display: block;
-  position: relative;
+.rainbow-button {
+  color: #fff;
   padding: var(--normal-paddings);
-  background-color: #d9d9d9;
+  background-color: #000000;
   border-radius: var(--border-radius);
-  border: 2px solid #000000;
-  overflow: hidden;
-  z-index: var(--z-normal);
+}
+
+.rainbow-button::before, .rainbow-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00c0ff), color-stop(49%, #ffcf00), color-stop(80%, #fc4f4f), to(#00c0ff));
+  background-image: -webkit-linear-gradient(left, #00c0ff 0%, #ffcf00 49%, #fc4f4f 80%, #00c0ff 100%);
+  background-image: -o-linear-gradient(left, #00c0ff 0%, #ffcf00 49%, #fc4f4f 80%, #00c0ff 100%);
+  background-image: linear-gradient(90deg, #00c0ff 0%, #ffcf00 49%, #fc4f4f 80%, #00c0ff 100%);
+  background-size: 200%;
+  border-radius: var(--border-radius);
+  z-index: -1;
+}
+
+.rainbow-button:hover::before, .rainbow-button:hover::after {
+  top: -3px;
+  left: -3px;
+  bottom: -3px;
+  right: -3px;
+  -webkit-animation: animation_C18 2s linear infinite;
+  animation: animation_C18 2s linear infinite;
+}
+
+.rainbow-button:hover::after {
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+}
+
+@-webkit-keyframes animation_C18 {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 200%;
+  }
+}
+
+@keyframes animation_C18 {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 200%;
+  }
 }
 
 /* ------- Btn --> D18 -------*/
