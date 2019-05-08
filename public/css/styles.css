@@ -6872,14 +6872,14 @@ li.btn-D14:after {
 }
 
 /* ------- Btn --> C18 -------*/
-.rainbow-button {
+.btn-C18 {
   color: #fff;
   padding: var(--normal-paddings);
   background-color: #000000;
   border-radius: var(--border-radius);
 }
 
-.rainbow-button::before, .rainbow-button::after {
+.btn-C18::before, .btn-C18::after {
   content: "";
   display: block;
   position: absolute;
@@ -6896,7 +6896,7 @@ li.btn-D14:after {
   z-index: -1;
 }
 
-.rainbow-button:hover::before, .rainbow-button:hover::after {
+.btn-C18:hover::before, .btn-C18:hover::after {
   top: -3px;
   left: -3px;
   bottom: -3px;
@@ -6905,7 +6905,7 @@ li.btn-D14:after {
   animation: animation_C18 2s linear infinite;
 }
 
-.rainbow-button:hover::after {
+.btn-C18:hover::after {
   -webkit-filter: blur(15px);
   filter: blur(15px);
 }
