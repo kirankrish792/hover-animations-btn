@@ -6117,11 +6117,41 @@ li.btn-D14:after {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  background-color: #d9d9d9;
+  background-color: white;
   border-radius: var(--border-radius);
   border: 2px solid #000000;
   overflow: hidden;
   z-index: var(--z-normal);
+}
+
+.btn-C16:hover {
+  color: #ffffff;
+}
+
+.btn-C16:hover:before {
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.btn-C16:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-dark-bg);
+  z-index: -1;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  -o-transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
 }
 
 /* ------- Btn --> D16 -------*/
