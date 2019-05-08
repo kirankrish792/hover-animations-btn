@@ -3,7 +3,7 @@
 
 $color1: #ee283e;
 $color2: #1f3944;
-$color3: hsl(0, 0%, 70%);
+$color3: hsl(0, 0%, 80%);
 
 .icon-A16 {
   display: inline-block;
@@ -59,6 +59,10 @@ $color3: hsl(0, 0%, 70%);
       transition: 0.3s ease-in-out;
       background-color: $color1;
     }
+    & .path1 {
+      opacity: 0;
+      transition: all 0.3s ease-in-out 0.1s;
+    }
   }
 
   &:before,
@@ -84,4 +88,7 @@ $color3: hsl(0, 0%, 70%);
     left: 0px;
     color: $color3;
   }
+}
+.path1 {
+  transition: all 0.3s ease-in-out 0s;
 }
