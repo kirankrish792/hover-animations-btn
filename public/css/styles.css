@@ -6064,14 +6064,52 @@ li.btn-D14:after {
 
 /* ------- Btn --> B16 -------*/
 .btn-B16 {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
-  padding: var(--normal-paddings);
   background-color: #d9d9d9;
   border-radius: var(--border-radius);
-  border: 2px solid #000000;
   overflow: hidden;
   z-index: var(--z-normal);
+  background-color: #ffc107;
+  color: var(--color-text);
+  width: var(--width-btn);
+  height: var(--height-btn);
+}
+
+.btn-B16::before {
+  content: "Hover me!";
+  color: var(--color-text);
+}
+
+.btn-B16:hover::before {
+  -webkit-transform: translateY(-3em);
+  -ms-transform: translateY(-3em);
+  transform: translateY(-3em);
+}
+
+.btn-B16::after {
+  content: "\f004";
+  font-family: fontAwesome;
+  color: red;
+  position: absolute;
+  font-size: var(--h3-font-size);
+  -webkit-transform: translateY(3em);
+  -ms-transform: translateY(3em);
+  transform: translateY(3em);
+}
+
+.btn-B16:hover::after {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 
 /* ------- Btn --> C16 -------*/

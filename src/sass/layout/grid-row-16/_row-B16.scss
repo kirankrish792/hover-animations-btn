@@ -1,10 +1,33 @@
 .btn-B16 {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  padding: var(--normal-paddings);
   background-color: hsl(0, 0%, 85%);
   border-radius: var(--border-radius);
-  border: 2px solid #000000;
   overflow: hidden;
   z-index: var(--z-normal);
+  background-color: #ffc107;
+  color: var(--color-text);
+  width: var(--width-btn);
+  height: var(--height-btn);
+
+  &::before {
+    content: "Hover me!";
+    color: var(--color-text);
+  }
+  &:hover::before {
+    transform: translateY(-3em);
+  }
+  &::after {
+    content: "\f004";
+    font-family: fontAwesome;
+    color: red;
+    position: absolute;
+    font-size: var(--h3-font-size);
+    transform: translateY(3em);
+  }
+  &:hover::after {
+    transform: translateY(0);
+  }
 }
