@@ -6933,11 +6933,41 @@ li.btn-D14:after {
   display: block;
   position: relative;
   padding: var(--normal-paddings);
-  background-color: #d9d9d9;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f01e1e), to(#d2e710));
+  background-image: -webkit-linear-gradient(left, #f01e1e, #d2e710);
+  background-image: -o-linear-gradient(left, #f01e1e, #d2e710);
+  background-image: linear-gradient(90deg, #f01e1e, #d2e710);
   border-radius: var(--border-radius);
-  border: 2px solid #000000;
   overflow: hidden;
   z-index: var(--z-normal);
+  color: var(--color-text);
+}
+
+.btn-D18-ripple {
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: animation_D18 1s;
+  animation: animation_D18 1s;
+  border-radius: 100%;
+}
+
+@-webkit-keyframes animation_D18 {
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes animation_D18 {
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
 /* ------- Btn --> E18 -------*/
