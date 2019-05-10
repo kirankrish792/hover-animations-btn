@@ -1,0 +1,45 @@
+- 
+ var pages = [
+  {
+   title: 'Inicio',
+   url: 'index.html',
+   child: []
+  },
+  {
+   title: 'Servicio',
+   url: 'services.html',
+   child: [
+    {
+     title: 'UI',
+     url: 'ui.html',
+    },
+     {
+     title: 'UX',
+     url: 'ux.html',
+    },
+    {
+     title: 'SEO',
+     url: 'seo.html'
+    }
+   ]
+  },
+  {
+   title: 'Novedades',
+   url: 'contactos.html',
+   child: []
+  },
+  {
+   title: 'Contacto',
+   url: 'contactos.html',
+   child: []
+  }
+ ]
+
+ul
+ each page in pages
+  li
+   a(href= page.url)= page.title
+   if page.child.length > 0
+    ul
+     each subpage in page.child
+      li: a(href= subpage.url)= subpage.title
