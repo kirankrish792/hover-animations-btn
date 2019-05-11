@@ -3,8 +3,9 @@
 // import "./styles/font-Montserrat.css";
 import "./styles/style.scss";
 // import "./static/img/logo.png";
-import "./static/img/logo.svg";
-import "./static/img/favicon.svg";
+import "./static/content/logo.svg";
+import "./static/content/favicon.svg";
+import "./static/content/img.png";
 
 //---------------------------------//
 

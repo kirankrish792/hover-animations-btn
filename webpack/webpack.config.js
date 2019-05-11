@@ -19,13 +19,39 @@ module.exports = {
         loader: "pug-loader"
       },
       {
-        test: /\.(jpg|png|gif|svg)$/,
+        test: /\.svg/,
         use: [
           {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "static/img",
+              outputPath: "static/content/svg",
+              useRelativePath: true
+            }
+          }
+        ]
+      },
+      {
+        test: /\.gif/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "static/content/gif",
+              useRelativePath: true
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(jpg|png)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "static/content/img",
               useRelativePath: true
             }
           }
