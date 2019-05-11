@@ -1,18 +1,13 @@
-// import "./styles/normalize.css";
-// import "./static/css/font-Confortaa.css";
-// import "./styles/font-Montserrat.css";
-import "./styles/style.scss";
-
-//---------------------------------//
 // Import png/jpg/svg/gif
-// import "./static/img/logo.png";
 import "./static/content/logo.svg";
 import "./static/content/favicon.svg";
 import "./static/content/img.png";
+// import "./static/img/logo.png";
 //---------------------------------//
 
 //---------------------------------//
-// Import css Normalize and fonts.css
+// Import CSS, Normalize and fonts.css
+import "./styles/style.scss";
 import "./static/css/font-Confortaa.css";
 import "./static/css/font-Montserrat.css";
 import "./static/css/normalize.css";
