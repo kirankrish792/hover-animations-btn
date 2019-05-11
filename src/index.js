@@ -12,6 +12,13 @@ import "./static/content/img.png";
 //---------------------------------//
 
 //---------------------------------//
+// Import css Normalize and fonts.css
+import "./static/css/font-Confortaa.css";
+import "./static/css/font-Montserrat.css";
+import "./static/css/normalize.css";
+//---------------------------------//
+
+//---------------------------------//
 // Import fonts.ttf
 import "./static/fonts/Comfortaa[wght].ttf";
 import "./static/fonts/Montserrat-Regular.ttf";
