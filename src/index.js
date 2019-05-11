@@ -1,12 +1,22 @@
 // import "./styles/normalize.css";
-// import "./styles/font-Confortaa.css";
+// import "./static/css/font-Confortaa.css";
 // import "./styles/font-Montserrat.css";
 import "./styles/style.scss";
+
+//---------------------------------//
+// Import png/jpg/svg/gif
 // import "./static/img/logo.png";
 import "./static/content/logo.svg";
 import "./static/content/favicon.svg";
 import "./static/content/img.png";
+//---------------------------------//
 
+//---------------------------------//
+// Import fonts.ttf
+import "./static/fonts/Comfortaa[wght].ttf";
+import "./static/fonts/Montserrat-Regular.ttf";
+import "./static/fonts/Montserrat-Medium.ttf";
+import "./static/fonts/Montserrat-SemiBold.ttf";
 //---------------------------------//
 
 //---------------------------------//
