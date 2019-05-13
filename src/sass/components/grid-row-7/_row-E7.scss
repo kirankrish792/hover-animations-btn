@@ -1,0 +1,41 @@
+.btn-E7 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid hsl(0, 0%, 0%);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  z-index: var(--z-normal);
+
+  &:hover {
+    color: var(--color-text);
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-dark-bg);
+    z-index: -1;
+  }
+  &::before {
+    transform: rotateY(90deg);
+  }
+  &:hover::before {
+    transform: rotateY(0deg);
+  }
+  &::after {
+    transform: rotateX(90deg);
+  }
+  &:hover::after {
+    transform: rotateX(0deg);
+  }
+}

@@ -1,0 +1,94 @@
+.btn-A16 {
+}
+
+$color1: #ee283e;
+$color2: #1f3944;
+$color3: hsl(0, 0%, 80%);
+
+.icon-A16 {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-paperplane-A16 {
+  font-size: 1em;
+  color: $color3;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.contact-button-A16 {
+  position: relative;
+  perspective: 1000;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  color: $color3;
+  text-transform: uppercase;
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: var(--normal-font-size);
+  border: 2px solid $color3;
+  border-radius: var(--border-radius);
+  padding: var(--normal-paddings);
+  transition: 0.3s ease-in-out;
+  z-index: var(--z-normal);
+
+  .span-A16 {
+    text-transform: none;
+    position: absolute;
+    color: $color1;
+    top: 20px;
+    left: 30px;
+    opacity: 0;
+    transition: all 0s ease 0s;
+  }
+  &:hover {
+    transition: 0.3s ease-in-out;
+    border: 2px solid $color3;
+    border-radius: 50px;
+    background-color: $color3;
+
+    & > .span-A16 {
+      opacity: 1;
+      transition: all 0.25s ease-in-out 0.1s;
+    }
+
+    &:before {
+      transition: 0.3s ease-in-out;
+      background-color: $color1;
+    }
+    & .path1 {
+      opacity: 0;
+      transition: all 0.3s ease-in-out 0.1s;
+    }
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -12px;
+    width: 132px;
+    height: 25px;
+  }
+  &:before {
+    border: 2px solid $color1;
+    background-color: $color2;
+    transform: skew(-25deg);
+    transition: 0.3s ease-in-out;
+  }
+
+  &:after {
+    content: "Available for work";
+    font-size: 0.45em;
+    top: -7px;
+    left: 0px;
+    color: $color3;
+  }
+}
+.path1 {
+  transition: all 0.3s ease-in-out 0s;
+}

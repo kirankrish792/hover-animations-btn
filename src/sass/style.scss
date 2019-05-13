@@ -1,0 +1,101 @@
+/* Styles globales and Variables CSS */
+@import "components/main-scss-components/variables.scss";
+@import "components/main-scss-components/global.scss";
+// /* -----------------------------------*/
+
+/* -----------------------------------*/
+/* Index header and main body */
+@import "components/main-scss-components/header.scss";
+@import "components/main-scss-components/main.scss";
+/* -----------------------------------*/
+
+/* -----------------------------------*/
+/* Tag-btn in wraps-buttons */
+@import "components/main-scss-components/tag-btn.scss";
+/* -----------------------------------*/
+
+/* Btn ==> Row 1 from column A to E */
+@import "layout/grid-row-1/main-grid-row-1";
+/* Btn ==> Row 2 from column A to E */
+@import "layout/grid-row-2/main-grid-row-2";
+/* Btn ==> Row 3 from column A to E */
+@import "layout/grid-row-3/main-grid-row-3";
+/* Btn ==> Row 4 from column A to E */
+@import "layout/grid-row-4/main-grid-row-4";
+/* Btn ==> Row 5 from column A to E */
+@import "layout/grid-row-5/main-grid-row-5";
+/* Btn ==> Row 6 from column A to E */
+@import "layout/grid-row-6/main-grid-row-6";
+/* Btn ==> Row 7 from column A to E */
+@import "layout/grid-row-7/main-grid-row-7";
+/* Btn ==> Row 8 from column A to E */
+@import "layout/grid-row-8/main-grid-row-8";
+/* Btn ==> Row 9 from column A to E */
+@import "layout/grid-row-9/main-grid-row-9";
+/* Btn ==> Row 10 from column A to E */
+@import "layout/grid-row-10/main-grid-row-10";
+/* Btn ==> Row 11 from column A to E */
+@import "layout/grid-row-11/main-grid-row-11";
+/* Btn ==> Row 12 from column A to E */
+@import "layout/grid-row-12/main-grid-row-12";
+/* Btn ==> Row 13 from column A to E */
+@import "layout/grid-row-13/main-grid-row-13";
+/* Btn ==> Row 14 from column A to E */
+@import "layout/grid-row-14/main-grid-row-14";
+/* Btn ==> Row 15 from column A to E */
+@import "layout/grid-row-15/main-grid-row-15";
+/* Btn ==> Row 16 from column A to E */
+@import "layout/grid-row-16/main-grid-row-16";
+/* Btn ==> Row 17 from column A to E */
+@import "layout/grid-row-17/main-grid-row-17";
+
+// /* Btn ==> Row 18 from column A to E */
+// // @import "layout/grid-row-18/main-grid-row-18";
+// /* ------- Btn --> A18 -------*/
+// @import "layout/grid-row-18/row-A18.scss";
+// /* ------- Btn --> B18 -------*/
+// @import "layout/grid-row-18/row-B18.scss";
+// /* ------- Btn --> C18 -------*/
+// @import "layout/grid-row-18/row-C18.scss";
+// /* ------- Btn --> D18 -------*/
+// @import "layout/grid-row-18/row-D18.scss";
+// /* ------- Btn --> E18 -------*/
+// @import "layout/grid-row-18/row-E18.scss";
+
+// /* Btn ==> Row 19 from column A to E */
+// // @import "sass/layout/grid-row-19/main-grid-row-19";
+// /* ------- Btn --> A19 -------*/
+// @import "layout/grid-row-19/row-A19.scss";
+// /* ------- Btn --> B19 -------*/
+// @import "layout/grid-row-19/row-B19.scss";
+// /* ------- Btn --> C19 -------*/
+// @import "layout/grid-row-19/row-C19.scss";
+// /* ------- Btn --> D19 -------*/
+// @import "layout/grid-row-19/row-D19.scss";
+// /* ------- Btn --> E19 -------*/
+// @import "layout/grid-row-19/row-E19.scss";
+
+// /* Btn ==> Row 20 from column A to E */
+// // @import "sass/layout/grid-row-20/main-grid-row-20";
+// /* ------- Btn --> A20 -------*/
+// @import "layout/grid-row-20/row-A20.scss";
+// /* ------- Btn --> B20 -------*/
+// @import "layout/grid-row-20/row-B20.scss";
+// /* ------- Btn --> C20 -------*/
+// @import "layout/grid-row-20/row-C20.scss";
+// /* ------- Btn --> D20 -------*/
+// @import "layout/grid-row-20/row-D20.scss";
+// /* ------- Btn --> E20 -------*/
+// @import "layout/grid-row-20/row-E20.scss";
+
+/* -----------------------------------*/
+
+/* -----------------------------------*/
+/* Styles for page Footer */
+@import "components/main-scss-components/footer.scss";
+/* -----------------------------------*/
+
+/* -----------------------------------*/
+/* Styles Media Query ===> max-width: 1740px */
+// @import "components/scss-mediaQuerys/maxW-1740";
+/* -----------------------------------*/

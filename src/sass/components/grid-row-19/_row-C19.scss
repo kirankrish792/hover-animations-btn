@@ -1,0 +1,10 @@
+.btn-C19 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  background-color: hsl(0, 0%, 85%);
+  border-radius: var(--border-radius);
+  border: 2px solid #000000;
+  overflow: hidden;
+  z-index: var(--z-normal);
+}

@@ -1,0 +1,42 @@
+.btn-C10 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid hsl(0, 0%, 0%);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  z-index: var(--z-normal);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  &:hover .span-C10:nth-child(odd),
+  &:hover .span-C10:nth-child(even) {
+    transform: translateY(0);
+  }
+}
+
+.span-C10 {
+  display: inline-block;
+}
+
+.span-C10:nth-child(odd)::before {
+  content: attr(data-text);
+  position: absolute;
+  transform: translateY(200%);
+}
+.span-C10:nth-child(odd) {
+  transform: translateY(-200%);
+}
+
+.span-C10:nth-child(even)::before {
+  content: attr(data-text);
+  position: absolute;
+  transform: translateY(-200%);
+}
+.span-C10:nth-child(even) {
+  transform: translateY(200%);
+}

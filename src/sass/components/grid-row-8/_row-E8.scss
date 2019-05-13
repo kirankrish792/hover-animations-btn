@@ -1,0 +1,33 @@
+.btn-E8 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: #309220;
+  background-color: rgb(80, 241, 0.1);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: 2.5em;
+  overflow: hidden;
+  z-index: var(--z-normal);
+  box-shadow: 0 0 15px hsl(100, 100%, 47%), 0 0 25px hsl(100, 100%, 47%);
+
+  &:hover {
+    transform: scale(0.95);
+    animation: animation_E8 1s linear infinite;
+  }
+}
+
+@keyframes animation_E8 {
+  0% {
+    box-shadow: 0 0 15px hsl(100, 100%, 47%), 0 0 25px hsl(100, 100%, 47%);
+  }
+  50% {
+    box-shadow: 0 0 0 10px hsl(100, 100%, 47%),
+      0 0 0 25px rgba(80, 241, 0, 0.5) hsla(100, 100%, 47%, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 20px hsla(100, 100%, 47%, 0),
+      0 0 0 80px hsla(100, 100%, 47%, 0);
+  }
+}

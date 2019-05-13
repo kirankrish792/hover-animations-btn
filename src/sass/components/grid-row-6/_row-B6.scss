@@ -1,0 +1,48 @@
+$color-B6: rgb(6, 195, 202);
+.btn-B6 {
+  display: block;
+  position: relative;
+  text-align: center;
+  line-height: var(--height-btn);
+  width: var(--width-btn);
+  height: var(--height-btn);
+  color: transparent;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border: 2px solid $color-B6;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  z-index: var(--z-normal);
+  box-shadow: 0 15px 30px rgba(6, 195, 202, 0.7);
+
+  &::before {
+    content: attr(data-title);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: $color-B6;
+    color: white;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover::before {
+    top: -100%;
+    left: 100%;
+  }
+
+  &::after {
+    content: attr(data-title);
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    background: $color-B6;
+    color: white;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover::after {
+    top: 0;
+    left: 0;
+  }
+}

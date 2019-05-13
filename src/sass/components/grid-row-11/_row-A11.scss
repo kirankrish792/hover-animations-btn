@@ -1,0 +1,36 @@
+.btn-A11 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  // border-radius: var(--border-radius);
+  // border: 2px solid hsl(0, 0%, 0%);
+  // overflow: hidden;
+  z-index: var(--z-normal);
+
+  &:hover .rect-A11 {
+    stroke-dashoffset: 160;
+    stroke-dasharray: 100, 380;
+    stroke: #d40420;
+  }
+}
+.svg-A11,
+.rect-A11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+}
+
+.rect-A11 {
+  stroke: var(--color-dark-bg);
+  stroke-width: 5px;
+  transition: 0.5s;
+  stroke-dasharray: 540, 500;
+  stroke-dashoffset: 0;
+}

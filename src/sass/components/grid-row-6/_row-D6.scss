@@ -1,0 +1,67 @@
+.btn-D6 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  color: var(--color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 400;
+  border: 2px solid #206bff;
+  // border-radius: var(--border-radius);
+  // overflow: hidden;
+  z-index: var(--z-normal);
+  background-color: #206bff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: white;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  &:before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 54%;
+    height: 100%;
+    background-color: #206bff;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &:before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+
+  &:hover:before {
+    opacity: 1;
+    top: 5px;
+    left: -5px;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+    animation: animatio_D6 2s linear infinite;
+  }
+  &:hover::after {
+    opacity: 1;
+    top: -5px;
+    right: -5px;
+    box-shadow: -5px 2px 5px rgba(0, 0, 0, 0.2);
+    animation: animatio_D6 -1s 2s linear infinite;
+  }
+}
+
+@keyframes animatio_D6 {
+  0%,
+  100% {
+    top: 5px;
+  }
+
+  50% {
+    top: -5px;
+  }
+}

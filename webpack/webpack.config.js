@@ -11,12 +11,10 @@ module.exports = {
   module: {
     rules: [
       {
-        // Compiler SCSS/SASS in miniCss
         test: /\.(sa|sc)ss$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
       },
       {
-        // Loader for css
         test: /\.css/,
         use: [
           {
@@ -29,7 +27,6 @@ module.exports = {
         ]
       },
       {
-        // Loader for fonts
         test: /\.(woff(2)?|ttf|eot|)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
@@ -42,12 +39,10 @@ module.exports = {
         ]
       },
       {
-        // Compiler and loader for PUG in HTML
         test: /\.pug/,
         loader: "pug-loader"
       },
       {
-        // Loader for files SVG
         test: /\.svg/,
         use: [
           {
@@ -61,7 +56,6 @@ module.exports = {
         ]
       },
       {
-        // Loader for files Gif
         test: /\.gif/,
         use: [
           {
@@ -75,7 +69,6 @@ module.exports = {
         ]
       },
       {
-        // Loader for files jpg and png
         test: /\.(jpg|png)$/,
         use: [
           {
@@ -89,34 +82,6 @@ module.exports = {
         ]
       },
       {
-        // Loader for files .mov and .mp4
-        test: /\.(mov|mp4)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "static/content/mp4",
-              useRelativePath: true
-            }
-          }
-        ]
-      },
-      {
-        // Loader for files .mp3
-        test: /\.mp3/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "static/content/mp3"
-            }
-          }
-        ]
-      },
-      {
-        // Loader for images and minified images
         loader: "image-webpack-loader",
         options: {
           mozjpeg: {
@@ -144,7 +109,6 @@ module.exports = {
   },
 
   plugins: [
-    // Minified files HTML
     new HtmlWebpackPlugin({
       template: "./src/index.pug",
       minify: {
@@ -156,7 +120,6 @@ module.exports = {
         useShortDoctype: true
       }
     }),
-    // Minified files CSS
     new MiniCssExtractPlugin({
       filename: "css/style.css"
     })

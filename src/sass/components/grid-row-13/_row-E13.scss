@@ -1,0 +1,118 @@
+.btn-E13 {
+  display: block;
+  position: relative;
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  z-index: var(--z-normal);
+}
+
+.social-button-btn-E13 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 0.75rem 0;
+  background: #eee;
+  border-radius: var(--border-radius);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  perspective: 30rem;
+  /* Solo con el fin de igual VISUALMENTE el tamaño, inecesario para su uso*/
+  transform: scale(1.3);
+}
+
+.cover-btn-E13 {
+  transform-origin: center bottom;
+  transform-style: preserve-3d;
+  text-align: center;
+  z-index: var(--z-normal);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  svg {
+    width: 2.75em;
+    height: 2.75em;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.inner-btn-E13 {
+  border-radius: var(--border-radius);
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+.outer-btn-E13 {
+  border-radius: var(--border-radius);
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  transform: translateZ(0.25em);
+}
+
+.edge-btn-E13 {
+  top: 0.25em;
+  height: 0.25em;
+  transform: rotateX(90deg);
+  transform-origin: center top;
+}
+
+.social-button-btn-E13 {
+  &:hover .cover-btn-E13 {
+    transform: rotateX(-120deg);
+  }
+  transition-duration: 0.7s;
+  transition-timing-function: ease;
+  div {
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+  }
+}
+
+.shadow-btn-E13 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3.2em;
+  border-radius: 0.5em;
+  opacity: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    transparent 100%
+  );
+  transform: rotateX(90deg);
+  transform-origin: center top;
+}
+
+.social-button-btn-E13:hover .shadow-btn-E13 {
+  transform: rotateX(45deg) scale(0.95);
+  opacity: 1;
+}
+
+.twitter-btn-E13 {
+  .inner-btn-E13 {
+    background-color: #67e2fe;
+  }
+  .outer-btn-E13 {
+    background-color: #2ec8fa;
+  }
+  .edge-btn-E13 {
+    background-color: #20c7f3;
+  }
+}

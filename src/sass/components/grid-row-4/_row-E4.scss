@@ -1,0 +1,35 @@
+.btn-E4 {
+  display: block;
+  position: relative;
+  padding: var(--normal-paddings);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 2px solid hsl(0, 0%, 0%);
+  overflow: hidden;
+  z-index: var(--z-normal);
+  background-color: var(--color-dark-bg);
+  color: var(--color-text);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    border-style: solid;
+    border-color: rgb(103, 221, 56);
+    border-width: 90px 120px;
+    z-index: -1;
+    transform: rotate(360deg);
+    transform-origin: left;
+  }
+
+  &:hover::before {
+    border-color: rgb(22, 137, 190);
+
+    transform: rotate(60deg);
+  }
+}

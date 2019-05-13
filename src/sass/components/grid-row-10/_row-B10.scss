@@ -1,0 +1,43 @@
+.btn-B10 {
+  display: block;
+  position: relative;
+  color: #eccf00;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 400;
+  border: 2px solid #eccf00;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  z-index: var(--z-normal);
+  background-color: var(--color-dark-bg);
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: var(--height-btn);
+  width: var(--width-btn);
+  height: var(--height-btn);
+
+  &:hover .span-B10-1 {
+    transform: translateX(0);
+    transition: 0.3s;
+  }
+  &:hover .span-B10-2 {
+    transform: translateX(100%);
+    transition: 0.3s;
+  }
+}
+.span-B10 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.span-B10-1 {
+  transform: translateX(-100%);
+  transition: 0s;
+}
+.span-B10-2 {
+  transform: translateX(0);
+  transition: 0s;
+}
