@@ -1,8 +1,9 @@
 // Import png/jpg/svg/gif
-import "./static/content/logo.svg";
-import "./static/content/favicon.svg";
-import "./static/content/img.png";
-// import "./static/img/logo.png";
+import "./static/content/svg/logo.svg";
+import "./static/content/svg/favicon.svg";
+import "./static/content/img/img.jpg";
+import "./static/content/mp3/mp3.mp3";
+import "./static/content/mp4/mp4.mp4";
 //---------------------------------//
 
 //---------------------------------//
@@ -22,12 +23,6 @@ import "./static/fonts/Montserrat-SemiBold.ttf";
 //---------------------------------//
 
 //---------------------------------//
-// Import js animations buttons
-import "./static/js/btn_E15";
 import "./static/js/btn_A17";
-import "./static/js/btn_B17";
-import "./static/js/btn_E17";
-import "./static/js/btn_A18";
-// import "./static/js/btn_B18";
-// import "./static/js/btn_D18";
+import "./static/js/copyright";
 //---------------------------------//

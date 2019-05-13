@@ -1,0 +1,24 @@
+/* Styles globales and Variables CSS */
+@import "components/main-scss-components/variables.scss";
+@import "components/main-scss-components/global.scss";
+// /* -----------------------------------*/
+
+/* -----------------------------------*/
+/* Index header and main body */
+@import "components/main-scss-components/header.scss";
+@import "components/main-scss-components/main.scss";
+/* -----------------------------------*/
+
+/* -----------------------------------*/
+/* Tag-btn in wraps-buttons */
+@import "components/main-scss-components/tag-btn.scss";
+/* -----------------------------------*/
+
+/* Btn ==> Row 1 from column A to E */
+@import "layout/grid-row-1/main-grid-row-1";
+/* -----------------------------------*/
+
+/* -----------------------------------*/
+/* Styles for page Footer */
+@import "components/main-scss-components/footer.scss";
+/* -----------------------------------*/

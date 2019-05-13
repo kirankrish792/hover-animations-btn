@@ -1,0 +1,30 @@
+.btn-C4 {
+  display: block;
+  position: relative;
+  // padding: var(--normal-paddings);
+  padding: 1em 1em 1em 2em;
+  color: var(--dark-color-text);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  border: 4px solid #000000;
+  background-color: #fff900;
+  overflow: hidden;
+  z-index: var(--z-normal);
+
+  &::after {
+    content: "\f054";
+    font-family: fontAwesome;
+    position: relative;
+    left: -20px;
+    opacity: 0;
+  }
+  &:hover::after {
+    left: 10px;
+    opacity: 1;
+  }
+  &:hover {
+    padding: 1em 2em 1em 2em;
+  }
+}

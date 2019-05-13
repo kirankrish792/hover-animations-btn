@@ -1,0 +1,25 @@
+.main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: var(--heading-height);
+  z-index: var(--z-normal);
+  background-color: var(--bg-color-dark);
+}
+.wrapper-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1700px;
+  height: var(--heading-height);
+}
+
+.text-footer {
+  display: flex;
+  align-content: center;
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  letter-spacing: 2px;
+}

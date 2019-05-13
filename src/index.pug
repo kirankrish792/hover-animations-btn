@@ -3,7 +3,7 @@ html(lang="es")
   head
     include partials\components\index-pug-components\head-metaTags.pug
     include partials\components\index-pug-components\head-link.pug
-    title JD - Effects and animations for buttons 
+    title JD
 
   body
     .principal-section
@@ -14,64 +14,11 @@ html(lang="es")
 
           //- Grid-Row ==> 1
           include partials\layout\grid-row-1\main-grid-row-1.pug
+
+          video(controls='')
+            source#arrows(src='static/content/mp4/mp4.mp4', type='video/mp4')
+
+          img(src="static/content/img/img.jpg", alt="")
           
-          //- Grid-Row ==> 2
-          include partials\layout\grid-row-2\main-grid-row-2.pug
-
-          //- Grid-Row ==> 3
-          include partials\layout\grid-row-3\main-grid-row-3.pug
-
-          //- Grid-Row ==> 4
-          include partials\layout\grid-row-4\main-grid-row-4.pug
-
-          //- Grid-Row ==> 5
-          include partials\layout\grid-row-5\main-grid-row-5.pug
-
-          //- Grid-Row ==> 6
-          include partials\layout\grid-row-6\main-grid-row-6.pug
-
-          //- Grid-Row ==> 7
-          include partials\layout\grid-row-7\main-grid-row-7.pug
-
-          //- Grid-Row ==> 8
-          include partials\layout\grid-row-8\main-grid-row-8.pug
-
-          //- Grid-Row ==> 9
-          include partials\layout\grid-row-9\main-grid-row-9.pug
-          
-          //- Grid-Row ==> 10
-          include partials\layout\grid-row-10\main-grid-row-10.pug
-
-          //- Grid-Row ==> 11
-          include partials\layout\grid-row-11\main-grid-row-11.pug
-
-          //- Grid-Row ==> 12
-          include partials\layout\grid-row-12\main-grid-row-12.pug
-
-          //- Grid-Row ==> 13
-          include partials\layout\grid-row-13\main-grid-row-13.pug
-
-          //- Grid-Row ==> 14
-          include partials\layout\grid-row-14\main-grid-row-14.pug
-
-          //- Grid-Row ==> 15
-          include partials\layout\grid-row-15\main-grid-row-15.pug
-
-          //- Grid-Row ==> 16
-          include partials\layout\grid-row-16\main-grid-row-16.pug
-
-          //- Grid-Row ==> 17
-          include partials\layout\grid-row-17\main-grid-row-17.pug
-
-          //- Grid-Row ==> 18
-          include partials\layout\grid-row-18\main-grid-row-18.pug
-
-          //- Grid-Row ==> 19
-          include partials\layout\grid-row-19\main-grid-row-19.pug
-
-          //- Grid-Row ==> 20
-          include partials\layout\grid-row-20\main-grid-row-20.pug
-
+          audio(src="static/content/mp3/mp3.mp3", controls='controls')
         include partials\components\index-pug-components\footer.pug
-
-    include partials\components\index-pug-components\scripts-https.pug

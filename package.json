@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/javiluli/longboard-shop.git"
+    "url": "git+https://github.com/javiluli/webpack-multimedia-workflow.git.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/javiluli/longboard-shop/issues"
+    "url": "https://github.com/javiluli/webpack-multimedia-workflow.git/issues"
   },
-  "homepage": "https://github.com/javiluli/longboard-shop#readme",
+  "homepage": "https://github.com/javiluli/webpack-multimedia-workflow.git#readme",
   "dependencies": {
     "autoprefixer": "^9.5.1",
     "css-loader": "^2.1.1",
@@ -32,6 +32,7 @@
     "sass-loader": "^7.1.0",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.3.1"
+    "webpack-dev-server": "^3.3.1",
+    "build:dev": "webpack --watch"
   }
 }

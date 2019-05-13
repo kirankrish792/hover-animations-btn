@@ -1,10 +1,18 @@
-# Webpack simple workflow
+# Webpack Multimedia Workflow
 
 ## Un sitio web típico necesita
 - CSS styles
 - A template engine
 - Javascript files
 - Custom Fonts
+
+## Este Webpack workflow permite
+- Carga y compilar Pug a HTML y minificarlo
+- Carga y compilar SCSS a CSS y minificarlo
+- Carga tipografias/fonts woff, woff2, ttf & eot
+- Carga imagenes Gif, jpg y png y minifica el peso
+- Carga archivos SVG
+- Carga Archivos Mp3 y Mp4
 
 ## Consideraciones
 - La entrada de tus archivos está dentro de la carpeta: `src`
@@ -22,3 +30,4 @@
   - Se inicia con: `npm start`
   - `"start": "webpack-dev-server --config webpack/webpack.config.js -d"`
 
+ 
