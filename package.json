@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/javiluli/longboard-shop.git"
+    "url": "git+https://github.com/javiluli/Hover-animations-btn.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/javiluli/longboard-shop/issues"
+    "url": "https://github.com/javiluli/Hover-animations-btn/issues"
   },
-  "homepage": "https://github.com/javiluli/longboard-shop#readme",
+  "homepage": "https://github.com/javiluli/Hover-animations-btn#readme",
   "dependencies": {
     "autoprefixer": "^9.5.1",
     "css-loader": "^2.1.1",
