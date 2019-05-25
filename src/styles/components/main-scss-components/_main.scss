@@ -1,7 +1,7 @@
 .section-main-grid-columns {
-  display: grid;
-  grid-template-columns: repeat(5, max-content);
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   max-width: var(--max-w);
   grid-gap: var(--gap);

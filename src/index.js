@@ -28,6 +28,8 @@ import "./static/js/btn_A17";
 import "./static/js/btn_B17";
 import "./static/js/btn_E17";
 import "./static/js/btn_A18";
-// import "./static/js/btn_B18";
-// import "./static/js/btn_D18";
+import "./static/js/btn_B18";
+import "./static/js/btn_D18";
 //---------------------------------//
+
+import "./static/js/copyright";

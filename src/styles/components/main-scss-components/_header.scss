@@ -33,9 +33,9 @@
 .main-nav {
   display: flex;
   flex-direction: row;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, max-content);
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: var(--max-w);
   width: 100%;
   height: 100%;
@@ -49,12 +49,12 @@
 .svg-logo {
   display: block;
   width: auto;
-  height: calc(var(--h1-font-size) + 1em);
+  height: 1.5em;
 }
 
 .main-title {
   color: var(--text-color);
   font-weight: 600;
-  font-size: var(--h1-font-size);
+  font-size: 1em;
   font-family: var(--heading-font);
 }

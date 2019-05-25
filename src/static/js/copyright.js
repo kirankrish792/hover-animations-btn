@@ -3,8 +3,7 @@
 let newDateYear = new Date().getFullYear();
 let copyrightText = document.getElementById("textFooter");
 
-copyrightText.innerHTML =
-  "Copyright &copy; 1996-" + newDateYear + " Javier Delgado";
+copyrightText.innerHTML = "Copyright &copy; 1996-" + newDateYear + " J.D.";
 //---------------------------------//
 
 // Test message connected with HTML

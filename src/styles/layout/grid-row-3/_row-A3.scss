@@ -4,7 +4,7 @@
   padding: var(--normal-paddings);
   color: var(--dark-color-text);
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
   font-weight: 400;
   border-top: 3px solid hsl(0, 0%, 0%);
   border-bottom: 3px solid hsl(0, 0%, 0%);
@@ -16,6 +16,6 @@
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.09, 1.91);
 
   &:hover {
-    letter-spacing: 8px;
+    letter-spacing: 5px;
   }
 }

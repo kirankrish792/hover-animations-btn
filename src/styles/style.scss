@@ -48,19 +48,8 @@
 @import "layout/grid-row-16/main-grid-row-16";
 /* Btn ==> Row 17 from column A to E */
 @import "layout/grid-row-17/main-grid-row-17";
-
 // /* Btn ==> Row 18 from column A to E */
-// // @import "layout/grid-row-18/main-grid-row-18";
-// /* ------- Btn --> A18 -------*/
-// @import "layout/grid-row-18/row-A18.scss";
-// /* ------- Btn --> B18 -------*/
-// @import "layout/grid-row-18/row-B18.scss";
-// /* ------- Btn --> C18 -------*/
-// @import "layout/grid-row-18/row-C18.scss";
-// /* ------- Btn --> D18 -------*/
-// @import "layout/grid-row-18/row-D18.scss";
-// /* ------- Btn --> E18 -------*/
-// @import "layout/grid-row-18/row-E18.scss";
+@import "layout/grid-row-18/main-grid-row-18";
 
 // /* Btn ==> Row 19 from column A to E */
 // // @import "sass/layout/grid-row-19/main-grid-row-19";
@@ -97,5 +86,6 @@
 
 /* -----------------------------------*/
 /* Styles Media Query ===> max-width: 1740px */
-// @import "components/scss-mediaQuerys/maxW-1740";
+@import "components/main-scss-components/_mediaQuery.scss";
+
 /* -----------------------------------*/
