@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/javiluli/Hover-animations-btn#index.html",
   "dependencies": {
-    "autoprefixer": "^9.5.1",
+    "autoprefixer": "^10.2.5",
     "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",
